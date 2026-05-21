@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.07);
+  background: #161616;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__logo {
+  font-family: "coolvetica", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav__link {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav__cta {
+  font-size: 12px;
+  color: #eeedfe;
+  background: #534ab7;
+  border-radius: 8px;
+  padding: 8px 18px;
+  transition: opacity 0.2s;
+}
+
+.nav__cta:hover {
+  opacity: 0.85;
+}
