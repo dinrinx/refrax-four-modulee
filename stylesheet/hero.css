@@ -510,3 +510,525 @@
   align-items: center;
   justify-content: center;
 }
+
+/* =============================
+   СЕКЦИЯ МЕРОПРИЯТИЙ
+   ============================= */
+
+.events {
+  position: relative;
+  padding: 40px 40px 0;
+  overflow: hidden;
+  min-height: 900px;
+}
+
+.events-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.events-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.events-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.events-arrow {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 80px;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 100px;
+  padding: 8px 16px;
+  line-height: 1;
+  margin-top: 8px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.events-arrow:hover {
+  background: #222;
+  color: #fff;
+}
+
+.events-heading {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* карточки мероприятий в разброс */
+.events-cards {
+  position: relative;
+  height: 720px;
+}
+
+.events-card {
+  position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #b4b4b4;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.events-card:hover {
+  transform: scale(1.02);
+}
+
+.events-card-title {
+  position: absolute;
+  top: 44px;
+  left: 33px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 40px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* позиции карточек из фигмы */
+.events-card-one {
+  left: -67px;
+  top: 0;
+  width: 527px;
+  height: 628px;
+  background: #979797;
+  transform: rotate(3deg);
+}
+
+.events-card-two {
+  left: 302px;
+  top: -80px;
+  width: 436px;
+  height: 597px;
+  background: #b4b4b4;
+  transform: rotate(-7deg);
+}
+
+.events-card-three {
+  left: 498px;
+  top: 63px;
+  width: 393px;
+  height: 563px;
+  background: #a0a0a0;
+  transform: rotate(3deg);
+}
+
+.events-card-four {
+  left: 800px;
+  top: -135px;
+  width: 389px;
+  height: 568px;
+  background: #b4b4b4;
+  transform: rotate(2deg);
+}
+
+.events-card-five {
+  left: 984px;
+  top: 52px;
+  width: 503px;
+  height: 689px;
+  background: #727272;
+  transform: rotate(-7deg);
+}
+
+.events-card:hover {
+  z-index: 5;
+}
+
+/* =============================
+   СЕКЦИЯ ЗОН
+   ============================= */
+
+.zones {
+  padding: 60px 40px;
+}
+
+.zones-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.zones-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* вертикальные карточки */
+.zones-cards {
+  display: flex;
+  gap: 0;
+  height: 772px;
+}
+
+.zones-card {
+  position: relative;
+  flex: 1;
+  background: #bfbfbf;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.4s ease;
+}
+
+.zones-card:hover {
+  flex: 2;
+}
+
+.zones-card-label {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  padding: 16px 24px;
+}
+
+/* =============================
+   СЕКЦИЯ АБОНЕМЕНТОВ
+   ============================= */
+
+.plans {
+  padding: 60px 40px;
+}
+
+.plans-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 140px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.plans-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.plans-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.plans-card {
+  flex: 1;
+  background: #222;
+  border-radius: 24px;
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+
+.plans-card-top {
+  background: #525252;
+  border-radius: 32px;
+  margin: 16px;
+  padding: 22px 29px 29px;
+}
+
+.plans-card-name {
+  font-family: "coolvetica", sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.plans-card-description {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+}
+
+.plans-card-price {
+  font-family: "coolvetica", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.plans-card-price-value {
+  font-size: 48px;
+}
+
+.plans-card-price-unit {
+  font-size: 32px;
+}
+
+.plans-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 28px;
+  background: #fff;
+  border-radius: 16px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.plans-card-btn:hover {
+  background: #a743fb;
+  color: #fff;
+}
+
+.plans-card-features {
+  padding: 0 45px;
+  list-style: disc;
+}
+
+.plans-card-features li {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 22px;
+  color: #b6b6b6;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.plans-card-features li:last-child {
+  margin-bottom: 0;
+}
+
+/* =============================
+   СЕКЦИЯ ОТЗЫВОВ
+   ============================= */
+
+.reviews {
+  padding: 60px 40px;
+  min-height: 700px;
+  position: relative;
+}
+
+.reviews-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 140px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.reviews-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.reviews-cards {
+  position: relative;
+  height: 500px;
+}
+
+.reviews-card {
+  position: absolute;
+  background: #222;
+  border-radius: 48px;
+  padding: 16px 40px;
+}
+
+.reviews-card-text {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #fff;
+  max-width: 332px;
+  margin-bottom: 16px;
+}
+
+.reviews-card-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.reviews-card-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #a7a7a7;
+  flex-shrink: 0;
+}
+
+.reviews-card-name {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.15;
+}
+
+/* позиции карточек из фигмы */
+.reviews-card-one {
+  left: 230px;
+  top: 0;
+}
+
+.reviews-card-two {
+  left: 845px;
+  top: 80px;
+}
+
+.reviews-card-three {
+  left: 68px;
+  top: 200px;
+}
+
+.reviews-card-four {
+  left: 490px;
+  top: 340px;
+}
+
+.reviews-card-five {
+  left: 1020px;
+  top: 230px;
+}
+
+/* аватарки под карточками */
+.reviews-card-one .reviews-card-author .reviews-card-name {
+  color: #fff;
+}
+.reviews-card-two .reviews-card-author .reviews-card-name {
+  color: #fff;
+}
+.reviews-card-three .reviews-card-author .reviews-card-name {
+  color: #fff;
+}
+.reviews-card-four .reviews-card-author .reviews-card-name {
+  color: #fff;
+}
+.reviews-card-five .reviews-card-author .reviews-card-name {
+  color: #fff;
+}
+
+/* =============================
+   ФУТЕР
+   ============================= */
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 527px;
+  background: #222;
+  overflow: hidden;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 46px;
+  left: 57px;
+}
+
+.footer-logo img {
+  height: 62px;
+}
+
+.footer-title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "coolvetica", sans-serif;
+  font-size: 240px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* контакты */
+.footer-contacts {
+  position: absolute;
+  top: 246px;
+  left: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-contact {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+.footer-contact:hover {
+  background: #858585;
+}
+
+/* позиции контактов по фигме */
+.footer-contacts .footer-contact:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-contacts .footer-contact:nth-child(2) {
+  position: absolute;
+  top: -42px;
+  left: 569px;
+}
+
+.footer-contacts .footer-contact:nth-child(3) {
+  position: absolute;
+  top: 103px;
+  left: 373px;
+}
+
+.footer-contacts .footer-contact:nth-child(4) {
+  position: absolute;
+  top: 58px;
+  left: 1017px;
+}
