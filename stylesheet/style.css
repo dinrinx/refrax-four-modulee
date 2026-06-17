@@ -5,8 +5,9 @@
 @import "hero.css";
 @import "zones.css";
 @import "events.css";
-@import "plans.css";
-@import "merch.css";
+@import "event-single.css";
+@import "projects.css";
+@import "shop.css";
 @import "reviews.css";
 @import "footer.css";
 @import "adaptive.css";
