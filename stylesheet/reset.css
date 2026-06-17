@@ -129,4 +129,9 @@ table {
 }
 button {
   background: none;
+  border: 0;
+  cursor: pointer;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
 }

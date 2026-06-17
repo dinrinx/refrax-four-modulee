@@ -33,6 +33,20 @@
     <script src="js/zones.js" defer></script>
   </head>
   <body>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <button class="menu-overlay-close" id="menuClose" type="button">
+        <img src="images/icon-arrow-left.svg" alt="" />
+      </button>
+      <nav class="menu-overlay-nav">
+        <a href="index.html" class="menu-overlay-link is-active">Главная</a>
+        <a href="pages/about.html" class="menu-overlay-link">О клубе</a>
+        <a href="pages/zones.html" class="menu-overlay-link">Зоны</a>
+        <a href="pages/events.html" class="menu-overlay-link">Афиша</a>
+        <a href="pages/merch.html" class="menu-overlay-link">Магазин</a>
+        <a href="pages/projects.html" class="menu-overlay-link">Наши проекты</a>
+      </nav>
+      <p class="menu-overlay-label">Меню</p>
+    </div>
     <!-- секция с карточкой и 3д -->
     <section class="hero">
       <!-- карточка события -->
@@ -89,7 +103,7 @@
       <!-- верхняя менюшка чтоб всегда была видна -->
       <div class="hero-controls">
         <button
-          class="hero-controls-btn hero-controls-btn--menu"
+          class="hero-controls-btn hero-controls-btn-menu"
           id="menuOpen"
           type="button"
           aria-expanded="false"
@@ -98,7 +112,7 @@
           <img src="images/icon-plus.svg" alt="" />
           Меню
         </button>
-        <button class="hero-controls-btn hero-controls-btn--map" type="button">
+        <button class="hero-controls-btn hero-controls-btn-map" type="button">
           <img src="images/icon-location.svg" alt="" />
           Карта
         </button>
