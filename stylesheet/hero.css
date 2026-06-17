@@ -1,0 +1,485 @@
+/* оверлей меню  */
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #f6f6f6;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.menu-overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-overlay-close {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 82px;
+  height: 82px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.menu-overlay-close:hover {
+  opacity: 0.5;
+}
+
+.menu-overlay-close img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.menu-overlay-nav {
+  position: absolute;
+  top: 168px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-overlay-link {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #222;
+  transition: color 0.2s;
+}
+
+.menu-overlay-link:hover {
+  color: #a743fb;
+}
+
+.menu-overlay-link.is-active {
+  color: #a743fb;
+}
+
+.menu-overlay-label {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 160px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  pointer-events: none;
+}
+
+/* сама страница (hero)  */
+
+.hero {
+  position: relative;
+  height: 1133px;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+/* кнопки меню и карта */
+.hero-controls {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px;
+  background: #222;
+  border-radius: 8px;
+  z-index: 10;
+  width: fit-content;
+}
+
+.hero-controls-btn-menu {
+  background: #a743fb;
+}
+
+.hero-controls-btn-menu:hover {
+  background: #bf72fc;
+}
+
+.hero-controls-btn-map {
+  background: transparent;
+}
+
+.hero-controls-btn-map:hover {
+  text-decoration: underline;
+}
+
+/* карточка события */
+.hero-announcement {
+  position: absolute;
+  top: 32px;
+  left: 40px;
+  width: 460px;
+  height: 962px;
+  background: rgba(34, 34, 34, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 48px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hero-announcement-image {
+  position: relative;
+  width: 428px;
+  height: 478px;
+  margin: 16px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.hero-announcement-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.hero-announcement-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 102, 102, 0) 0%,
+    rgba(0, 0, 0, 0.5) 78%
+  );
+  border-radius: 48px;
+}
+
+.hero-announcement-image-info {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.hero-announcement-tag {
+  display: inline-block;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.hero-announcement-name {
+  font-family: "coolvetica", sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.hero-announcement-date {
+  display: inline-flex;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-announcement-teacher {
+  position: absolute;
+  top: 523px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-announcement-avatar {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hero-announcement-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-announcement-teacher-name {
+  font-family: "coolvetica", sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-announcement-teacher-role {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #ececec;
+}
+
+.hero-announcement-location {
+  position: absolute;
+  top: 639px;
+  left: 154px;
+}
+
+.hero-announcement-hall {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ececec;
+  margin-bottom: 4px;
+}
+
+.hero-announcement-address {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #ececec;
+}
+
+.hero-announcement-buttons {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 428px;
+}
+
+.hero-announcement-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: 16px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.hero-announcement-btn:hover {
+  opacity: 0.8;
+}
+
+.hero-announcement-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-announcement-btn-map {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.hero-announcement-btn-map:hover {
+  background: #fff;
+  color: #222;
+}
+
+.hero-announcement-btn-signup {
+  background: #222;
+  border: none;
+  color: #fff;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.hero-announcement-btn-signup:hover {
+  background: #fff;
+  color: #222;
+}
+
+/* джойстик */
+.hero-joystick {
+  position: absolute;
+  top: 434px;
+  left: 83px;
+  width: 1078px;
+  height: 810px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-joystick img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+/* заголовок */
+.hero-title {
+  position: absolute;
+  top: 253px;
+  left: 895px;
+  z-index: 2;
+}
+
+.hero-title-eyebrow {
+  display: block;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.hero-title-text {
+  font-family: "coolvetica", sans-serif;
+  font-size: 140px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.hero-title-line-accent {
+  color: #a743fb;
+}
+
+/* лого */
+.hero-logo {
+  position: absolute;
+  top: 44px;
+  right: 40px;
+  z-index: 2;
+}
+
+.hero-logo img {
+  height: 38px;
+}
+
+/* карта */
+
+.map {
+  position: relative;
+  width: 1440px;
+  height: 821px;
+  margin: 0 auto;
+}
+
+.map-inner {
+  position: relative;
+  width: 1360px;
+  height: 821px;
+  margin: 0 40px;
+  background: rgba(34, 34, 34, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+/* схема этажа */
+.map-floorplan {
+  position: absolute;
+  top: 38px;
+  left: 165px;
+  width: 486px;
+  height: 738px;
+}
+
+.map-floorplan img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* панель бронирования */
+.map-booking {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 533px;
+  height: 773px;
+  background: #222;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.map-booking-hall {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 94px;
+}
+
+.map-booking-slots {
+  position: absolute;
+  top: 190px;
+  left: 33px;
+  width: 464px;
+  height: 534px;
+  background: #525252;
+  border-radius: 32px;
+  padding: 22px 29px;
+}
+
+.map-booking-slots-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.map-slots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.map-slot-btn {
+  width: 399px;
+  padding: 16px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.map-slot-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.map-booking-number {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
+  background: #f0f0f0;
+  border-radius: 120px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 24px;
+  color: #222;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

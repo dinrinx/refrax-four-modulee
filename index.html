@@ -33,18 +33,137 @@
     <script src="js/zones.js" defer></script>
   </head>
   <body>
-    <header class="nav">
-      <a href="index.html" class="nav__logo">REFRAX</a>
-      <nav class="nav__links">
-        <a href="pages/about.html" class="nav__link">О клубе</a>
-        <a href="pages/zones.html" class="nav__link">Зоны</a>
-        <a href="pages/events.html" class="nav__link">Афиша</a>
-        <a href="pages/merch.html" class="nav__link">Мерч</a>
-        <a href="pages/plans.html" class="nav__link">Абонементы</a>
-      </nav>
-      <a href="pages/plans.html" class="nav__cta">Купить абонемент</a>
-    </header>
+    <!-- секция с карточкой и 3д -->
+    <section class="hero">
+      <!-- карточка события -->
+      <div class="hero-announcement">
+        <div class="hero-announcement-image">
+          <img
+            class="hero-announcement-photo"
+            src="images/announcement-photo.png"
+            alt="Мастер-класс Расстраиваем комп врага"
+          />
+          <div class="hero-announcement-image-overlay"></div>
+          <div class="hero-announcement-image-info">
+            <span class="hero-announcement-tag">Мастер-класс</span>
+            <p class="hero-announcement-name">Расстраиваем комп врага</p>
+            <span class="hero-announcement-date">12 мая 18.00</span>
+          </div>
+        </div>
 
-    <main></main>
+        <div class="hero-announcement-teacher">
+          <div class="hero-announcement-avatar">
+            <img src="images/teacher-avatar.png" alt="Волод Дьяволович" />
+          </div>
+          <div class="hero-announcement-teacher-info">
+            <p class="hero-announcement-teacher-name">Волод Дьяволович</p>
+            <span class="hero-announcement-teacher-role">Тренер</span>
+          </div>
+        </div>
+
+        <div class="hero-announcement-location">
+          <p class="hero-announcement-hall">Зал «Гнев»</p>
+          <p class="hero-announcement-address">
+            Москва, ул. Воланда, д.36, с. 2
+          </p>
+        </div>
+
+        <div class="hero-announcement-buttons">
+          <button
+            class="hero-announcement-btn hero__announcement-btn--map"
+            type="button"
+          >
+            <img src="images/icon-location.svg" alt="" />
+            Посмотреть на карте
+          </button>
+          <button
+            class="hero-announcement-btn hero-announcement-btn--signup"
+            type="button"
+          >
+            <img src="images/icon-plus.svg" alt="" />
+            Записаться
+          </button>
+        </div>
+      </div>
+
+      <!-- верхняя менюшка чтоб всегда была видна -->
+      <div class="hero-controls">
+        <button
+          class="hero-controls-btn hero-controls-btn--menu"
+          id="menuOpen"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menuOverlay"
+        >
+          <img src="images/icon-plus.svg" alt="" />
+          Меню
+        </button>
+        <button class="hero-controls-btn hero-controls-btn--map" type="button">
+          <img src="images/icon-location.svg" alt="" />
+          Карта
+        </button>
+      </div>
+
+      <!-- 3д джойстик, контейнер с параллаксом  -->
+      <div class="hero-joystick" id="heroJoystick">
+        <img class="hero-joystick-img" src="images/joystick-3d.png" alt="" />
+      </div>
+
+      <!-- заголовок -->
+      <div class="hero-title">
+        <span class="hero-title-eyebrow">Специально для злодеев</span>
+        <h1 class="hero-title-text">
+          <span class="hero-title"
+            >Твоя <br />
+            база <br />
+            refrax
+          </span>
+        </h1>
+      </div>
+
+      <!-- лого -->
+      <a href="index.html" class="hero-logo">
+        <img src="images/logo-refrax.png" alt="REFRAX" />
+      </a>
+    </section>
+
+    <!-- секция с картой и выбором слота-->
+    <section class="map">
+      <!-- схема этажа -->
+      <div class="map-floor-plan">
+        <img
+          class="map-floor-plan-img"
+          src="images/floor-plan.png"
+          alt="Схема зала"
+        />
+      </div>
+
+      <!-- панель бронирования -->
+      <div class="map-booking">
+        <div class="map-booking-header">
+          <span class="map-booking-number">2</span>
+          <h2 class="map-booking-hall">Зал «Гнев»</h2>
+        </div>
+
+        <div class="map-booking-slots">
+          <p class="map-booking-slots-title">Свободные окна</p>
+
+          <ul class="map-slots-list">
+            <li class="map-slots-item">
+              <button class="map-slot-btn" type="button">12 мая 14.00</button>
+            </li>
+            <li class="map-slots-item">
+              <button class="map-slot-btn" type="button">13 мая 16.00</button>
+            </li>
+            <li class="map-slots-item">
+              <button class="map-slot-btn" type="button">14 мая 16.00</button>
+            </li>
+            <li class="map-slots-item">
+              <button class="map-slot-btn" type="button">14 мая 18.00</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
