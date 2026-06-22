@@ -1,0 +1,375 @@
+.zones-hero {
+  position: relative;
+  width: 1440px;
+  min-height: 1024px;
+  background: #f6f6f6;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.zones-hero-eyebrow {
+  position: absolute;
+  top: 151px;
+  left: 40px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  width: 175px;
+  line-height: 1.33;
+}
+
+.zones-hero-title {
+  position: absolute;
+  top: 235px;
+  left: 40px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 160px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+}
+
+/* джойстик повёрнутый */
+.zones-hero-image {
+  position: absolute;
+  top: 62px;
+  left: 735px;
+  width: 966px;
+  height: 843px;
+}
+
+.zones-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(-21.27deg);
+}
+
+/* тёмная полоса с фотками */
+.zones-hero-strip {
+  position: absolute;
+  top: 758px;
+  left: 0;
+  width: 1440px;
+  height: 266px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 40px;
+  overflow: hidden;
+}
+
+.zones-hero-strip-item {
+  width: 184px;
+  height: 205px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.zones-hero-strip-item-short {
+  height: 161px;
+}
+
+.zones-hero-strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zones-dark {
+  position: relative;
+  width: 1440px;
+  height: 1133px;
+  background: #222;
+  margin: 0 auto;
+  border-radius: 0 0 64px 64px;
+  overflow: hidden;
+}
+
+.zones-dark-title {
+  position: absolute;
+  top: 55px;
+  left: 56px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 210px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.zones-dark-inner {
+  position: absolute;
+  top: 286px;
+  left: 46px;
+  width: 1361px;
+  height: 790px;
+  background: #eee;
+  border-radius: 32px;
+  overflow: hidden;
+  padding: 28px 26px;
+}
+
+.zones-dark-count {
+  font-family: "coolvetica", sans-serif;
+  font-size: 32px;
+  color: #c4c4c4;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.zones-dark-subtitle {
+  font-family: "coolvetica", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.zones-dark-cards {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  top: 137px;
+  left: 26px;
+}
+
+.zones-dark-card {
+  width: 410px;
+  cursor: pointer;
+}
+
+.zones-dark-card img {
+  width: 410px;
+  height: 397px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.zones-dark-card-name {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.zones-dark-card-desc {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  width: 175px;
+  line-height: 1.33;
+}
+
+.zones-faves {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: #f6f6f6;
+  min-height: 1200px;
+}
+
+.zones-faves-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.zones-faves-desc {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  width: 369px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+.zones-faves-arrow {
+  width: 73px;
+  height: 65px;
+  border: 1px solid #222;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 60px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.zones-faves-arrow:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* сетка фото */
+.zones-faves-grid {
+  position: relative;
+  height: 800px;
+}
+
+.zones-faves-grid-main {
+  position: absolute;
+  left: 569px;
+  top: 0;
+  width: 426px;
+  height: 461px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.zones-faves-grid-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zones-faves-grid-small {
+  position: absolute;
+  width: 295px;
+  height: 319px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.zones-faves-grid-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zones-faves-grid-small:nth-child(2) {
+  left: 40px;
+  top: 71px;
+}
+.zones-faves-grid-small:nth-child(3) {
+  left: 346px;
+  top: 71px;
+}
+.zones-faves-grid-small:nth-child(4) {
+  left: 960px;
+  top: 71px;
+}
+.zones-faves-grid-small:nth-child(5) {
+  left: 1266px;
+  top: 71px;
+}
+
+.zones-choose {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0;
+  background: #f6f6f6;
+}
+
+.zones-choose-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  padding: 0 40px;
+  margin-bottom: 16px;
+}
+
+.zones-choose-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  padding: 0 40px;
+  margin-bottom: 60px;
+}
+
+.zones-choose-row {
+  position: relative;
+  width: 1440px;
+  height: 627px;
+  overflow: hidden;
+  border-top: 1px solid rgba(34, 34, 34, 0.2);
+}
+
+.zones-choose-row-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  z-index: 2;
+}
+
+.zones-choose-row-right .zones-choose-row-info {
+  left: auto;
+  right: 40px;
+}
+
+.zones-choose-row-name {
+  font-family: "coolvetica", sans-serif;
+  font-size: 90px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.zones-choose-row-arrow {
+  width: 73px;
+  height: 65px;
+  border: 1px solid #222;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  flex-shrink: 0;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.zones-choose-row-arrow:hover {
+  background: #222;
+  color: #fff;
+}
+
+.zones-choose-row-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 710px;
+  height: 627px;
+}
+
+.zones-choose-row-right .zones-choose-row-image {
+  left: auto;
+  right: 0;
+}
+
+.zones-choose-row-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

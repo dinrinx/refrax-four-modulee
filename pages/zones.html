@@ -1,33 +1,234 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REFRAX</title>
+    <title>Зоны — REFRAX</title>
     <link type="image/x-icon" href="../images/favicon.png" rel="icon" />
-    <link
-      href="../fonts/coolvetica-rg.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../stylesheet/style.css" />
-    <script src="../js/events.js" defer></script>
-    <script src="../js/main.js" defer></script>
     <script src="../js/nav.js" defer></script>
-    <script src="../js/zones.js" defer></script>
   </head>
   <body>
-    <header class="nav">
-      <a href="../index.html" class="nav__logo">REFRAX</a>
-      <nav class="nav__links">
-        <a href="about.html" class="nav__link">О клубе</a>
-        <a href="zones.html" class="nav__link">Зоны</a>
-        <a href="events.html" class="nav__link">Афиша</a>
-        <a href="merch.html" class="nav__link">Мерч</a>
-        <a href="plans.html" class="nav__link">Абонементы</a>
+    <!-- меню оверлей -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <button class="menu-overlay-close" id="menuClose" type="button">
+        <img src="../images/icon-arrow-left.svg" alt="" />
+      </button>
+      <nav class="menu-overlay-nav">
+        <a href="../index.html" class="menu-overlay-link">Главная</a>
+        <a href="about.html" class="menu-overlay-link">О клубе</a>
+        <a href="zones.html" class="menu-overlay-link is-active">Зоны</a>
+        <a href="events.html" class="menu-overlay-link">Афиша</a>
+        <a href="merch.html" class="menu-overlay-link">Магазин</a>
+        <a href="projects.html" class="menu-overlay-link">Наши проекты</a>
       </nav>
-      <a href="plans.html" class="nav__cta">Купить абонемент</a>
-    </header>
+      <p class="menu-overlay-label">Меню</p>
+    </div>
+
+    <!-- навигация -->
+    <div class="about-nav">
+      <button
+        class="hero-controls-btn hero-controls-btn-menu"
+        id="menuOpen"
+        type="button"
+      >
+        <img src="../images/icon-plus.svg" alt="" />
+        Меню
+      </button>
+      <a href="../404.html" class="hero-controls-btn hero-controls-btn-map">
+        <img src="../images/icon-location.svg" alt="" />
+        Карта
+      </a>
+    </div>
+
+    <!-- лого -->
+    <a href="../index.html" class="about-logo">
+      <img src="../images/logo-refrax.png" alt="REFRAX" />
+    </a>
+
+    <!-- секция 1: герой -->
+    <section class="zones-hero">
+      <p class="zones-hero-eyebrow">Мы найдем тебе место для развлечения</p>
+
+      <p class="zones-hero-title">
+        Что<br />
+        внутри<br />
+        Refrax?
+      </p>
+
+      <!-- джойстик повёрнутый -->
+      <div class="zones-hero-image">
+        <img src="../images/joystick-3d.png" alt="" />
+      </div>
+
+      <!-- тёмная полоса с фотками -->
+      <div class="zones-hero-strip">
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-pc.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item zones-hero-strip-item-short">
+          <img src="../images/zone-vr.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-arcade.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-ar.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-board.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-pc.png" alt="" />
+        </div>
+        <div class="zones-hero-strip-item">
+          <img src="../images/zone-vr.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- секция 2: все для тебя (тёмная) -->
+    <section class="zones-dark">
+      <p class="zones-dark-title">Все для тебя</p>
+
+      <div class="zones-dark-inner">
+        <p class="zones-dark-count">(12)</p>
+        <p class="zones-dark-subtitle">Со злостью на вас</p>
+
+        <div class="zones-dark-cards">
+          <div class="zones-dark-card">
+            <img src="../images/zone-pc.png" alt="" />
+            <p class="zones-dark-card-name">ПК-зона</p>
+            <p class="zones-dark-card-desc">
+              Мы найдем тебе место для развлечения
+            </p>
+          </div>
+          <div class="zones-dark-card">
+            <img src="../images/zone-vr.png" alt="" />
+            <p class="zones-dark-card-name">VR-зона</p>
+            <p class="zones-dark-card-desc">
+              Мы найдем тебе место для развлечения
+            </p>
+          </div>
+          <div class="zones-dark-card">
+            <img src="../images/zone-arcade.png" alt="" />
+            <p class="zones-dark-card-name">Автоматы</p>
+            <p class="zones-dark-card-desc">
+              Мы найдем тебе место для развлечения
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- секция 3: любимчики -->
+    <section class="zones-faves">
+      <p class="zones-faves-title">Любимчики</p>
+
+      <p class="zones-faves-desc">
+        Мы найдем тебе место для развлечения. Мы найдем тебе место для
+        развлечения. Мы найдем тебе место для развлечения.
+      </p>
+
+      <div class="zones-faves-arrow">→</div>
+
+      <!-- сетка фото -->
+      <div class="zones-faves-grid">
+        <div class="zones-faves-grid-main">
+          <img src="../images/zone-vr.png" alt="" />
+        </div>
+        <div class="zones-faves-grid-small">
+          <img src="../images/zone-pc.png" alt="" />
+        </div>
+        <div class="zones-faves-grid-small">
+          <img src="../images/zone-ar.png" alt="" />
+        </div>
+        <div class="zones-faves-grid-small">
+          <img src="../images/zone-arcade.png" alt="" />
+        </div>
+        <div class="zones-faves-grid-small">
+          <img src="../images/zone-board.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- секция 4: выбирай свою зону -->
+    <section class="zones-choose">
+      <p class="zones-choose-title">Выбирай свою зону</p>
+      <p class="zones-choose-subtitle">
+        И оформляй абонемент, а мы все подготовим
+      </p>
+
+      <!-- зона пк -->
+      <div class="zones-choose-row">
+        <div class="zones-choose-row-info">
+          <p class="zones-choose-row-name">ПК-зона</p>
+          <a href="../404.html" class="zones-choose-row-arrow">→</a>
+        </div>
+        <div class="zones-choose-row-image">
+          <img src="../images/zone-pc.png" alt="" />
+        </div>
+      </div>
+
+      <!-- зона vr -->
+      <div class="zones-choose-row zones-choose-row-right">
+        <div class="zones-choose-row-info">
+          <p class="zones-choose-row-name">VR-зона</p>
+          <a href="../404.html" class="zones-choose-row-arrow">→</a>
+        </div>
+        <div class="zones-choose-row-image">
+          <img src="../images/zone-vr.png" alt="" />
+        </div>
+      </div>
+
+      <!-- зона автоматы -->
+      <div class="zones-choose-row">
+        <div class="zones-choose-row-info">
+          <p class="zones-choose-row-name">Игровые автоматы</p>
+          <a href="../404.html" class="zones-choose-row-arrow">→</a>
+        </div>
+        <div class="zones-choose-row-image">
+          <img src="../images/zone-arcade.png" alt="" />
+        </div>
+      </div>
+
+      <!-- зона ar -->
+      <div class="zones-choose-row zones-choose-row-right">
+        <div class="zones-choose-row-info">
+          <p class="zones-choose-row-name">AR-зона</p>
+          <a href="../404.html" class="zones-choose-row-arrow">→</a>
+        </div>
+        <div class="zones-choose-row-image">
+          <img src="../images/zone-ar.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer">
+      <a href="../index.html" class="footer-logo">
+        <img src="../images/logo-refrax-white.png" alt="REFRAX" />
+      </a>
+
+      <div class="footer-address">
+        <p class="footer-address-text">Москва, ул. Воланда, д.36, с. 2</p>
+        <p class="footer-address-text">Москва, пр. Крипипасты, д. 666</p>
+      </div>
+
+      <p class="footer-title">Зарубимся?</p>
+
+      <div class="footer-contacts">
+        <a
+          href="mailto:helpme@refrax.ru"
+          class="footer-contact footer-contact-email"
+          >helpme@refrax.ru</a
+        >
+        <a href="tel:+74951260948" class="footer-contact footer-contact-phone"
+          >+7 495 126 09 48</a
+        >
+        <a href="#" class="footer-contact footer-contact-tg">Телеграм-канал</a>
+        <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
+      </div>
+    </footer>
   </body>
 </html>

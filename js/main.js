@@ -39,3 +39,21 @@ document.querySelectorAll(".map-slot-btn").forEach(function (btn) {
     });
   });
 });
+
+var reviewCards = document.querySelectorAll(".reviews-card");
+var reviewTime = 0;
+
+function animateReviews() {
+  reviewTime += 0.02;
+
+  reviewCards.forEach(function (card, i) {
+    var offset = (i / reviewCards.length) * Math.PI * 2;
+    var x = Math.cos(reviewTime + offset) * 40;
+    var y = Math.sin(reviewTime + offset) * 25;
+    card.style.transform = "translate(" + x + "px, " + y + "px)";
+  });
+
+  requestAnimationFrame(animateReviews);
+}
+
+animateReviews();

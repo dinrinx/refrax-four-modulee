@@ -1,0 +1,282 @@
+.events-page-hero {
+  position: relative;
+  width: 1440px;
+  min-height: 1024px;
+  background: #f6f6f6;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 173px;
+}
+
+.events-page-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 160px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  width: 897px;
+  margin: 0 auto;
+}
+
+.events-page-eyebrow {
+  position: absolute;
+  top: 581px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  line-height: 1.33;
+  width: 175px;
+}
+
+.events-page-eyebrow-left {
+  left: 40px;
+}
+
+.events-page-eyebrow-right {
+  right: 40px;
+  text-align: right;
+}
+
+/* декоративные фото по бокам */
+.events-page-side {
+  position: absolute;
+  top: 771px;
+  width: 300px;
+  height: 253px;
+  overflow: hidden;
+}
+
+.events-page-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.events-page-side-left {
+  left: 0;
+}
+
+.events-page-side-right {
+  right: 0;
+}
+
+.events-page-type {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: #f6f6f6;
+}
+
+.events-page-type-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 60px;
+}
+
+/* сетка карточек */
+.events-page-cards {
+  position: relative;
+  height: 720px;
+  margin-bottom: 80px;
+}
+
+.events-page-card {
+  position: absolute;
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.events-page-card:hover {
+  transform: scale(1.02);
+}
+
+.events-page-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.events-page-card-main {
+  left: 569px;
+  top: 0;
+  width: 426px;
+  height: 641px;
+  border: 1px solid #222;
+}
+
+.events-page-card-small:nth-child(2) {
+  left: 40px;
+  top: 99px;
+  width: 295px;
+  height: 443px;
+}
+
+.events-page-card-small:nth-child(3) {
+  left: 346px;
+  top: 99px;
+  width: 295px;
+  height: 443px;
+}
+
+.events-page-card-small:nth-child(4) {
+  left: 960px;
+  top: 99px;
+  width: 295px;
+  height: 443px;
+}
+
+.events-page-card-small:nth-child(5) {
+  left: 1266px;
+  top: 99px;
+  width: 295px;
+  height: 443px;
+  border: 1px solid #222;
+}
+
+/* ближайшие */
+.events-page-nearest {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  text-align: right;
+  margin-bottom: 60px;
+}
+
+/* карточки в разброс */
+.events-page-scattered {
+  position: relative;
+  height: 750px;
+}
+
+.events-page-scattered-card {
+  position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.events-page-scattered-card:hover {
+  transform: scale(1.02);
+}
+
+.events-page-scattered-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.events-page-scattered-one {
+  left: 52px;
+  top: 210px;
+  width: 353px;
+  height: 530px;
+  transform: rotate(-7.13deg);
+  border: 1px solid #222;
+}
+
+.events-page-scattered-two {
+  left: 480px;
+  top: 0;
+  width: 377px;
+  height: 461px;
+  transform: rotate(2.09deg);
+}
+
+.events-page-scattered-three {
+  left: 950px;
+  top: 200px;
+  width: 377px;
+  height: 461px;
+  transform: rotate(2.1deg);
+  border: 1px solid #222;
+}
+
+.events-page-party {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: #f6f6f6;
+}
+
+.events-page-party-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 160px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.events-page-party-content {
+  position: relative;
+  height: 700px;
+}
+
+/* круглое большое фото */
+.events-page-party-main {
+  position: absolute;
+  left: 212px;
+  top: 0;
+  width: 518px;
+  height: 508px;
+  border-radius: 300px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.events-page-party-main:hover {
+  transform: scale(1.02);
+}
+
+.events-page-party-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* эллипсы -->  */
+.events-page-party-ellipse {
+  position: absolute;
+  top: 18px;
+  width: 230px;
+  height: 469px;
+  overflow: hidden;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.events-page-party-ellipse:hover {
+  transform: scale(1.02);
+}
+
+.events-page-party-ellipse img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.events-page-party-ellipse-one {
+  left: 750px;
+}
+
+.events-page-party-ellipse-two {
+  left: 988px;
+}

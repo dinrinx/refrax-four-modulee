@@ -838,9 +838,10 @@
 }
 
 .reviews {
-  padding: 60px 40px;
-  min-height: 700px;
+  padding: 60px 0;
+  background: #f6f6f6;
   position: relative;
+  min-height: 1000px;
 }
 
 .reviews-title {
@@ -864,95 +865,104 @@
 
 .reviews-cards {
   position: relative;
-  height: 500px;
+  height: 800px;
 }
 
 .reviews-card {
   position: absolute;
   background: #222;
-  border-radius: 48px;
-  padding: 16px 40px;
+  border-radius: 32px;
+  padding: 24px 32px;
 }
 
 .reviews-card-avatar img {
-  width: 75px;
-  height: 75px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .reviews-card-text {
   font-family: "LabGrotesque", sans-serif;
-  font-size: 26px;
-  line-height: 1.15;
+  font-size: 22px;
+  line-height: 1.3;
   color: #fff;
-  max-width: 332px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 .reviews-card-author {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  margin-top: 8px;
+  gap: 8px;
+  position: absolute;
 }
 
 .reviews-card-avatar {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background: #a7a7a7;
-  flex-shrink: 0;
+  overflow: hidden;
 }
 
 .reviews-card-name {
   font-family: "LabGrotesque", sans-serif;
   font-size: 16px;
   color: #222;
-  line-height: 1.15;
+  text-align: center;
+  line-height: 1.2;
 }
 
-/* позиции карточек из фигмы */
 .reviews-card-one {
   left: 230px;
-  top: 0;
+  top: 60px;
+  width: 353px;
 }
-
 .reviews-card-two {
-  left: 845px;
+  right: 200px;
   top: 80px;
+  width: 459px;
 }
-
 .reviews-card-three {
-  left: 68px;
-  top: 200px;
+  left: 180px;
+  top: 310px;
+  width: 311px;
 }
-
 .reviews-card-four {
-  left: 490px;
-  top: 340px;
+  left: 560px;
+  top: 500px;
+  width: 477px;
 }
-
 .reviews-card-five {
-  left: 1020px;
-  top: 230px;
+  right: 160px;
+  top: 320px;
+  width: 412px;
 }
 
 /* аватарки под карточками */
-.reviews-card-one .reviews-card-author .reviews-card-name {
-  color: #fff;
+.reviews-card-one .reviews-card-author {
+  left: -91px;
+  top: 80px;
 }
-.reviews-card-two .reviews-card-author .reviews-card-name {
-  color: #fff;
+.reviews-card-two .reviews-card-author {
+  right: -110px;
+  top: 100px;
 }
-.reviews-card-three .reviews-card-author .reviews-card-name {
-  color: #fff;
+.reviews-card-three .reviews-card-author {
+  left: -70px;
+  top: 100px;
 }
-.reviews-card-four .reviews-card-author .reviews-card-name {
-  color: #fff;
+.reviews-card-four .reviews-card-author {
+  left: -100px;
+  top: 120px;
 }
-.reviews-card-five .reviews-card-author .reviews-card-name {
-  color: #fff;
+.reviews-card-five .reviews-card-author {
+  right: -120px;
+  top: 90px;
+}
+
+.reviews-card-name {
+  color: #222;
 }
 
 .footer {
@@ -987,6 +997,21 @@
 }
 
 /* контакты */
+.footer-address {
+  position: absolute;
+  top: 57px;
+  left: 277px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-address-text {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
 .footer-contacts {
   position: absolute;
   top: 0;

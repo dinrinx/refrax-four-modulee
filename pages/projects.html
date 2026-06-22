@@ -1,33 +1,155 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REFRAX</title>
+    <title>Наши проекты — REFRAX</title>
     <link type="image/x-icon" href="../images/favicon.png" rel="icon" />
-    <link
-      href="../fonts/coolvetica-rg.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../stylesheet/style.css" />
-    <script src="../js/events.js" defer></script>
-    <script src="../js/main.js" defer></script>
     <script src="../js/nav.js" defer></script>
-    <script src="../js/zones.js" defer></script>
   </head>
   <body>
-    <header class="nav">
-      <a href="../index.html" class="nav__logo">REFRAX</a>
-      <nav class="nav__links">
-        <a href="about.html" class="nav__link">О клубе</a>
-        <a href="zones.html" class="nav__link">Зоны</a>
-        <a href="events.html" class="nav__link">Афиша</a>
-        <a href="merch.html" class="nav__link">Мерч</a>
-        <a href="plans.html" class="nav__link">Абонементы</a>
+    <!-- меню оверлей -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <button class="menu-overlay-close" id="menuClose" type="button">
+        <img src="../images/icon-arrow-left.svg" alt="" />
+      </button>
+      <nav class="menu-overlay-nav">
+        <a href="../index.html" class="menu-overlay-link">Главная</a>
+        <a href="about.html" class="menu-overlay-link">О клубе</a>
+        <a href="zones.html" class="menu-overlay-link">Зоны</a>
+        <a href="events.html" class="menu-overlay-link">Афиша</a>
+        <a href="merch.html" class="menu-overlay-link">Магазин</a>
+        <a href="projects.html" class="menu-overlay-link is-active"
+          >Наши проекты</a
+        >
       </nav>
-      <a href="plans.html" class="nav__cta">Купить абонемент</a>
-    </header>
+      <p class="menu-overlay-label">Меню</p>
+    </div>
+
+    <!-- навигация -->
+    <div class="about-nav">
+      <button
+        class="hero-controls-btn hero-controls-btn-menu"
+        id="menuOpen"
+        type="button"
+      >
+        <img src="../images/icon-plus.svg" alt="" />
+        Меню
+      </button>
+      <a href="../404.html" class="hero-controls-btn hero-controls-btn-map">
+        <img src="../images/icon-location.svg" alt="" />
+        Карта
+      </a>
+    </div>
+
+    <!-- лого -->
+    <a href="../index.html" class="about-logo">
+      <img src="../images/logo-refrax.png" alt="REFRAX" />
+    </a>
+
+    <!-- секция 1: герой -->
+    <section class="projects-hero">
+      <p class="projects-hero-title">
+        А ещё<br />
+        у нас есть....
+      </p>
+
+      <p class="projects-hero-label projects-hero-label-left">
+        Оставайся с нами
+      </p>
+      <p class="projects-hero-label projects-hero-label-right">
+        Оставайся с нами
+      </p>
+
+      <!-- два фото в разброс -->
+      <div class="projects-hero-images">
+        <div class="projects-hero-img projects-hero-img-left">
+          <img src="../images/event-2.png" alt="" />
+        </div>
+        <div class="projects-hero-img projects-hero-img-right">
+          <img src="../images/event-3.png" alt="" />
+        </div>
+      </div>
+
+      <!-- скоро новые -->
+      <div class="projects-soon">
+        <p class="projects-soon-word">Скоро</p>
+        <p class="projects-soon-center">Оставайся с нами</p>
+        <p class="projects-soon-word">Новые</p>
+      </div>
+    </section>
+
+    <!-- секция 2: каталог refrax -->
+    <section class="projects-item">
+      <div class="projects-item-info">
+        <p class="projects-item-title">Каталог<br />REFRax</p>
+        <p class="projects-item-desc">
+          Мы найдем тебе место для развлечения. Мы найдем тебе место для
+          развлечения. Мы найдем тебе место для развлечения.
+        </p>
+        <a href="../404.html" class="projects-item-arrow">→</a>
+      </div>
+      <div class="projects-item-image">
+        <img src="../images/event-1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- секция 3: архив сплетен -->
+    <section class="projects-item">
+      <div class="projects-item-info">
+        <p class="projects-item-title">Архив сплетен</p>
+        <p class="projects-item-desc">
+          Мы найдем тебе место для развлечения. Мы найдем тебе место для
+          развлечения. Мы найдем тебе место для развлечения.
+        </p>
+        <a href="../404.html" class="projects-item-arrow">→</a>
+      </div>
+      <div class="projects-item-image">
+        <img src="../images/event-2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- секция 4: веб-плакат -->
+    <section class="projects-item">
+      <div class="projects-item-info">
+        <p class="projects-item-title">Веб-плакат</p>
+        <p class="projects-item-desc">
+          Мы найдем тебе место для развлечения. Мы найдем тебе место для
+          развлечения. Мы найдем тебе место для развлечения.
+        </p>
+        <a href="../404.html" class="projects-item-arrow">→</a>
+      </div>
+      <div class="projects-item-image">
+        <img src="../images/event-3.png" alt="" />
+      </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer">
+      <a href="../index.html" class="footer-logo">
+        <img src="../images/logo-refrax-white.png" alt="REFRAX" />
+      </a>
+
+      <div class="footer-address">
+        <p class="footer-address-text">Москва, ул. Воланда, д.36, с. 2</p>
+        <p class="footer-address-text">Москва, пр. Крипипасты, д. 666</p>
+      </div>
+
+      <p class="footer-title">Зарубимся?</p>
+
+      <div class="footer-contacts">
+        <a
+          href="mailto:helpme@refrax.ru"
+          class="footer-contact footer-contact-email"
+          >helpme@refrax.ru</a
+        >
+        <a href="tel:+74951260948" class="footer-contact footer-contact-phone"
+          >+7 495 126 09 48</a
+        >
+        <a href="#" class="footer-contact footer-contact-tg">Телеграм-канал</a>
+        <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
+      </div>
+    </footer>
   </body>
 </html>

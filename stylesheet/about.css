@@ -1,0 +1,364 @@
+.about-nav {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px;
+  background: #222;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.about-logo {
+  position: fixed;
+  top: 44px;
+  right: 40px;
+  z-index: 100;
+}
+
+.about-logo img {
+  height: 38px;
+}
+
+.about-hero {
+  position: relative;
+  width: 1440px;
+  min-height: 970px;
+  background: #f6f6f6;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 249px;
+}
+
+.about-eyebrow {
+  position: absolute;
+  top: 249px;
+  left: 40px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.about-eyebrow-second {
+  top: 576px;
+  left: 282px;
+  width: 144px;
+  white-space: normal;
+}
+
+.about-hero-titles {
+  display: flex;
+  gap: 0;
+}
+
+.about-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 140px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.about-title-base {
+  position: absolute;
+  top: 273px;
+  left: 39px;
+}
+
+.about-title-for {
+  position: absolute;
+  top: 273px;
+  left: 441px;
+}
+
+.about-title-at {
+  position: absolute;
+  top: 497px;
+  left: 40px;
+}
+
+.about-title-you {
+  position: absolute;
+  top: 497px;
+  left: 406px;
+}
+
+/* фото справа */
+.about-hero-image {
+  position: absolute;
+  top: 160px;
+  left: 772px;
+  width: 628px;
+  height: 809px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* иконки снизу */
+.about-icons {
+  position: absolute;
+  top: 721px;
+  left: 40px;
+  display: flex;
+  gap: 48px;
+}
+
+.about-icon-item {
+  width: 164px;
+  height: 164px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.about-icon-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-icon-item-purple {
+  background: transparent;
+  border: 5px solid #a743fb;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-icon-dot {
+  width: 41px;
+  height: 41px;
+  background: #a743fb;
+  border-radius: 200px;
+}
+
+.about-we {
+  position: relative;
+  width: 1440px;
+  min-height: 1000px;
+  background: #f6f6f6;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.about-divider-line {
+  position: absolute;
+  top: 0;
+  left: 294px;
+  right: 0;
+  height: 1px;
+  background: #222;
+}
+
+.about-since {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 18px;
+  color: #222;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+
+.about-we-titles {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  padding-top: 100px;
+}
+
+.about-title-nobetrayal {
+  position: absolute;
+  top: 401px;
+  left: 616px;
+}
+
+.about-title-traditions {
+  position: absolute;
+  top: 701px;
+  left: 40px;
+}
+
+/* карточка концепции */
+.about-concept-card {
+  position: absolute;
+  top: 102px;
+  left: 491px;
+  width: 526px;
+  height: 797px;
+  background: rgba(220, 180, 254, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 54px 26px 40px;
+  transform: rotate(4.91deg);
+}
+
+.about-concept-title {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.about-concept-text {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 28px;
+  line-height: 1.1;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.about-concept-footer {
+  position: absolute;
+  bottom: 40px;
+  left: 26px;
+  right: 26px;
+  font-family: "coolvetica", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  line-height: 1;
+}
+
+.about-rules {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: #f6f6f6;
+}
+
+.about-rules-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.about-rules-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.about-rules-card {
+  flex: 1;
+  background: #222;
+  border-radius: 32px;
+  padding: 40px;
+  min-height: 542px;
+  position: relative;
+}
+
+.about-rules-number {
+  font-family: "coolvetica", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.about-rules-card-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.about-rules-card-text {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about-plans {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 0;
+  background: #f6f6f6;
+}
+
+.about-plans-subtitle {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 32px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  padding: 0 40px;
+}
+
+.about-plan-row {
+  position: relative;
+  width: 1440px;
+  height: 480px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  padding: 22px 40px;
+}
+
+.about-plan-info {
+  position: relative;
+  z-index: 2;
+}
+
+.about-plan-name {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.about-plan-features {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+
+.about-plan-features p {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 26px;
+  color: #222;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.about-plan-image {
+  position: absolute;
+  right: 40px;
+  top: 22px;
+  width: 731px;
+  height: 731px;
+  border-radius: 600px;
+  overflow: hidden;
+}
+
+.about-plan-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
