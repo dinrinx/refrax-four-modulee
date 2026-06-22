@@ -393,62 +393,73 @@
 /* карта */
 
 .map {
-  position: relative;
-  width: 1440px;
-  height: 821px;
-  margin: 0 auto;
+  padding: 40px 40px;
   background: transparent;
+  position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
 .map-inner {
   position: relative;
   width: 1360px;
   height: 821px;
-  margin: 0 40px;
   background: rgba(34, 34, 34, 0.3);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 48px;
   overflow: hidden;
-  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 310px;
+  gap: 100px;
 }
 
 /* схема этажа */
 .map-floorplan {
-  position: absolute;
-  top: 38px;
-  left: 165px;
-  width: 486px;
-  height: 738px;
+  position: relative;
+  width: 500px;
+  height: 745px;
+  flex-shrink: 0;
+  z-index: 2;
+  overflow: visible;
 }
 
 .map-floorplan img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
 /* панель бронирования */
 .map-booking {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  position: relative;
+  top: auto;
+  left: auto;
   width: 533px;
   height: 773px;
   background: #222;
   border-radius: 24px;
   overflow: hidden;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 24px;
 }
 
 .map-booking-hall {
+  position: absolute;
+  top: 94px;
+  left: 32px;
   font-family: "coolvetica", sans-serif;
   font-size: 64px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 94px;
+  text-align: left;
 }
 
 .map-booking-slots {
@@ -459,26 +470,32 @@
   height: 534px;
   background: #525252;
   border-radius: 32px;
-  padding: 22px 29px;
+  overflow: hidden;
 }
 
 .map-booking-slots-title {
+  position: absolute;
+  top: 22px;
+  left: 12px;
   font-family: "coolvetica", sans-serif;
   font-size: 48px;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 16px;
 }
 
 .map-slots-list {
+  list-style: none;
+  position: absolute;
+  top: 106px;
+  left: 29px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  list-style: none;
+  gap: 0;
 }
 
 .map-slot-btn {
   width: 399px;
+  height: 70px;
   padding: 16px 24px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
@@ -488,6 +505,7 @@
   text-align: center;
   cursor: pointer;
   transition: background 0.2s;
+  margin-bottom: 10px;
 }
 
 .map-slot-btn:hover {
@@ -505,7 +523,6 @@
   font-family: "coolvetica", sans-serif;
   font-size: 24px;
   color: #222;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,23 +530,15 @@
 
 .events {
   position: relative;
-  padding: 40px 40px 0;
+  padding: 60px 40px 0;
+  background: #f6f6f6;
   overflow: hidden;
-  min-height: 900px;
-}
-
-.events-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
 .events-header {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: flex-end;
+  gap: 60px;
   margin-bottom: 16px;
 }
 
@@ -543,29 +552,22 @@
 
 .events-subtitle {
   font-family: "LabGrotesque", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   color: #222;
   text-transform: uppercase;
-  margin-top: 16px;
+  margin-bottom: 60px;
 }
 
 .events-arrow {
-  font-family: "LabGrotesque", sans-serif;
-  font-size: 80px;
-  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
   border: 1px solid #222;
-  border-radius: 100px;
-  padding: 8px 16px;
-  line-height: 1;
-  margin-top: 8px;
-  transition:
-    background 0.2s,
-    color 0.2s;
-}
-
-.events-arrow:hover {
-  background: #222;
-  color: #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+  pointer-events: none;
 }
 
 .events-heading {
@@ -574,13 +576,15 @@
   line-height: 1;
   text-transform: uppercase;
   color: #222;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /* карточки мероприятий в разброс */
 .events-cards {
   position: relative;
-  height: 720px;
+  height: 900px;
+  overflow: visible;
+  margin: 0;
 }
 
 .events-card {
@@ -596,45 +600,58 @@
   transform: scale(1.02);
 }
 
+.events-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* позиции карточек */
 .events-card-one {
-  left: -67px;
-  top: 0;
-  width: 405px;
-  height: 608px;
-  transform: rotate(3deg);
+  left: -40px;
+  top: 100px;
+  width: 420px;
+  height: 620px;
+  transform: rotate(2deg);
+  z-index: 1;
 }
 
 .events-card-two {
-  left: 302px;
-  top: -80px;
+  left: 340px;
+  top: 40px;
   width: 370px;
   height: 555px;
-  transform: rotate(-7deg);
+  transform: rotate(-5deg);
+  z-index: 2;
 }
 
 .events-card-three {
-  left: 498px;
-  top: 63px;
+  left: 640px;
+  top: 160px;
   width: 362px;
   height: 542px;
-  transform: rotate(3deg);
+  transform: rotate(2deg);
+  z-index: 3;
 }
 
 .events-card-four {
-  left: 800px;
-  top: -135px;
+  right: 320px;
+  top: 12px;
   width: 370px;
   height: 555px;
   transform: rotate(2deg);
+  z-index: 2;
 }
 
 .events-card-five {
-  left: 984px;
-  top: 52px;
+  right: -40px;
+  top: 100px;
   width: 428px;
   height: 641px;
-  transform: rotate(-7deg);
+  transform: rotate(-8deg);
+  z-index: 3;
 }
 
 .events-card:hover {
@@ -746,6 +763,7 @@
   border-radius: 32px;
   margin: 16px;
   padding: 22px 29px 29px;
+  overflow: hidden;
 }
 
 .plans-card-name {
@@ -794,6 +812,7 @@
   transition:
     background 0.2s,
     color 0.2s;
+  box-sizing: border-box;
 }
 
 .plans-card-btn:hover {
@@ -970,14 +989,14 @@
 /* контакты */
 .footer-contacts {
   position: absolute;
-  top: 246px;
-  left: 57px;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .footer-contact {
+  position: absolute;
   display: inline-flex;
   align-items: center;
   padding: 16px 24px;
@@ -987,7 +1006,6 @@
   font-size: 26px;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 8px;
   transition: background 0.2s;
   width: fit-content;
 }
@@ -995,28 +1013,25 @@
 .footer-contact:hover {
   background: #858585;
 }
-
-/* позиции контактов по фигме */
-.footer-contacts .footer-contact:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
+.footer-contact-email {
+  left: 626px;
+  top: 246px;
 }
 
-.footer-contacts .footer-contact:nth-child(2) {
-  position: absolute;
-  top: -42px;
-  left: 569px;
+.footer-contact-phone {
+  left: 57px;
+  top: 304px;
+  background: #858585;
 }
 
-.footer-contacts .footer-contact:nth-child(3) {
-  position: absolute;
-  top: 103px;
-  left: 373px;
+.footer-contact-tg {
+  left: 430px;
+  top: 407px;
+  background: #858585;
 }
 
-.footer-contacts .footer-contact:nth-child(4) {
-  position: absolute;
-  top: 58px;
-  left: 1017px;
+.footer-contact-vk {
+  left: 1074px;
+  top: 349px;
+  background: #858585;
 }

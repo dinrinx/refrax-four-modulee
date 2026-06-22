@@ -31,3 +31,11 @@ function animateJoystick() {
 }
 
 animateJoystick();
+
+document.querySelectorAll(".map-slot-btn").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelector(".plans").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});

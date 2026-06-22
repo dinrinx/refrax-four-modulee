@@ -142,13 +142,8 @@
     <!-- секция с картой и выбором слота-->
     <section class="map">
       <div class="map-inner">
-        <!-- схема этажа -->
-        <div class="map-floor-plan">
-          <img
-            class="map-floor-plan-img"
-            src="images/floor-plan.png"
-            alt="Схема зала"
-          />
+        <div class="map-floorplan">
+          <img src="images/floor-plan.svg" alt="Схема зала" />
         </div>
 
         <!-- панель бронирования -->
@@ -185,10 +180,29 @@
       <!-- заголовок секции -->
       <div class="events-header">
         <p class="events-title">Бронируй место</p>
-        <p class="events-subtitle">А мы всё подготовим</p>
-        <a href="pages/events.html" class="events-arrow">→</a>
+        <span class="events-arrow">
+          <svg width="60" height="60" viewBox="0 0 40 40" fill="none">
+            <line
+              x1="20"
+              y1="35"
+              x2="20"
+              y2="5"
+              stroke="#222"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <polyline
+              points="8,17 20,5 32,17"
+              stroke="#222"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+        </span>
       </div>
-
+      <p class="events-subtitle">А мы всё подготовим</p>
       <p class="events-heading">Или приходи на событие</p>
 
       <!-- карточки мероприятий (разброс) -->
@@ -213,7 +227,10 @@
 
     <!-- секция зон -->
     <section class="zones">
-      <p class="zones-title">У нас есть всё для твоих пакостей</p>
+      <p class="zones-title">
+        У нас есть всё <br />
+        для твоих пакостей
+      </p>
       <p class="zones-subtitle">От обычного пк до новейшей плойки</p>
 
       <!-- вертикальные карточки зон -->
@@ -258,7 +275,7 @@
               <span class="plans-card-price-value">299</span>
               <span class="plans-card-price-unit">руб/час</span>
             </p>
-            <a href="#" class="plans-card-btn">Оформить</a>
+            <a href="404.html" class="plans-card-btn">Оформить</a>
           </div>
           <ul class="plans-card-features">
             <li>Доступ ко всем зонам</li>
@@ -278,7 +295,7 @@
               <span class="plans-card-price-value">699</span>
               <span class="plans-card-price-unit">руб</span>
             </p>
-            <a href="#" class="plans-card-btn">Оформить</a>
+            <a href="404.html" class="plans-card-btn">Оформить</a>
           </div>
           <ul class="plans-card-features">
             <li>Доступ ко всем зонам</li>
@@ -296,7 +313,7 @@
               <span class="plans-card-price-value">1990</span>
               <span class="plans-card-price-unit">руб</span>
             </p>
-            <a href="#" class="plans-card-btn">Оформить</a>
+            <a href="404.html" class="plans-card-btn">Оформить</a>
           </div>
           <ul class="plans-card-features">
             <li>Доступ ко всем зонам</li>
@@ -395,14 +412,17 @@
 
       <p class="footer-title">Зарубимся?</p>
 
-      <!-- контакты -->
       <div class="footer-contacts">
-        <a href="tel:+74951260948" class="footer-contact">+7 495 126 09 48</a>
-        <a href="mailto:helpme@refrax.ru" class="footer-contact"
+        <a
+          href="mailto:helpme@refrax.ru"
+          class="footer-contact footer-contact-email"
           >helpme@refrax.ru</a
         >
-        <a href="#" class="footer-contact">Телеграм-канал</a>
-        <a href="#" class="footer-contact">Вконтакте</a>
+        <a href="tel:+74951260948" class="footer-contact footer-contact-phone"
+          >+7 495 126 09 48</a
+        >
+        <a href="#" class="footer-contact footer-contact-tg">Телеграм-канал</a>
+        <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
       </div>
     </footer>
   </body>
