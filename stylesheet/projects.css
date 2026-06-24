@@ -1,6 +1,6 @@
 .projects-hero {
   position: relative;
-  width: 1440px;
+  width: 100%;
   min-height: 1000px;
   background: #f6f6f6;
   margin: 0 auto;
@@ -44,8 +44,11 @@
   position: absolute;
   top: 513px;
   left: 0;
+  right: 0;
   width: 100%;
   height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .projects-hero-img {
@@ -61,18 +64,17 @@
 }
 
 .projects-hero-img-left {
-  left: 455px;
+  left: auto;
+  position: relative;
   top: 0;
-  width: 223px;
-  height: 328px;
   transform: rotate(-9.7deg);
+  margin-right: -30px;
 }
 
 .projects-hero-img-right {
-  left: 693px;
+  left: auto;
+  position: relative;
   top: 0;
-  width: 202px;
-  height: 302px;
   transform: rotate(8.48deg);
 }
 

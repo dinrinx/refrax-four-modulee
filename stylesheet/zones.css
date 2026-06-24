@@ -45,6 +45,20 @@
   height: 100%;
   object-fit: contain;
   transform: rotate(-21.27deg);
+  animation: joystickSway 4s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes joystickSway {
+  0% {
+    transform: rotate(-21.27deg);
+  }
+  50% {
+    transform: rotate(-14deg);
+  }
+  100% {
+    transform: rotate(-21.27deg);
+  }
 }
 
 /* тёмная полоса с фотками */
@@ -55,12 +69,26 @@
   width: 100%;
   height: 266px;
   background: #222;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 32px 40px;
   overflow: hidden;
   z-index: 1;
+}
+
+.zones-hero-strip-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 32px;
+  width: max-content;
+  animation: stripScroll 18s linear infinite;
+}
+
+@keyframes stripScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .zones-hero-strip-item {
@@ -176,22 +204,35 @@
 }
 
 .zones-faves {
-  position: relative;
-  width: 1440px;
-  margin: 0 auto;
-  padding: 60px 40px;
+  width: 100%;
+  max-width: 1620px;
+  padding: 60px 40px 200px;
   background: #f6f6f6;
-  min-height: 1200px;
+  overflow: hidden;
+}
+
+.zones-faves-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.zones-faves-line {
+  width: 1140px;
+  height: 1px;
+  background: #222;
+  flex-shrink: 1;
 }
 
 .zones-faves-title {
   font-family: "coolvetica", sans-serif;
-  font-size: 120px;
+  font-size: 80px;
   line-height: 0.75;
   text-transform: uppercase;
   color: #222;
-  text-align: right;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 .zones-faves-desc {
@@ -230,61 +271,42 @@
 
 /* сетка фото */
 .zones-faves-grid {
-  position: relative;
-  height: 800px;
-}
-
-.zones-faves-grid-main {
-  position: absolute;
-  left: 569px;
-  top: 0;
-  width: 426px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
   height: 461px;
-  border-radius: 24px;
   overflow: hidden;
 }
 
-.zones-faves-grid-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+.zones-faves-grid-main,
 .zones-faves-grid-small {
-  position: absolute;
   width: 295px;
   height: 319px;
   border-radius: 24px;
   overflow: hidden;
+  flex-shrink: 0;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
 }
 
+.zones-faves-grid-main:hover,
+.zones-faves-grid-small:hover {
+  width: 426px;
+  height: 461px;
+}
+
+.zones-faves-grid-main img,
 .zones-faves-grid-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.zones-faves-grid-small:nth-child(2) {
-  left: 40px;
-  top: 71px;
-}
-.zones-faves-grid-small:nth-child(3) {
-  left: 346px;
-  top: 71px;
-}
-.zones-faves-grid-small:nth-child(4) {
-  left: 960px;
-  top: 71px;
-}
-.zones-faves-grid-small:nth-child(5) {
-  left: 1266px;
-  top: 71px;
-}
-
 .zones-choose {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  padding: 60px 0 0;
   background: #f6f6f6;
 }
 
@@ -295,7 +317,7 @@
   text-transform: uppercase;
   color: #222;
   padding: 0 40px;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
 }
 
 .zones-choose-subtitle {
@@ -304,31 +326,35 @@
   color: #222;
   text-transform: uppercase;
   padding: 0 40px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .zones-choose-row {
   position: relative;
-  width: 1440px;
-  height: 627px;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   border-top: 1px solid rgba(34, 34, 34, 0.2);
+  display: flex;
+  align-items: stretch;
 }
 
 .zones-choose-row-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 40px;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
   display: flex;
   align-items: center;
   gap: 32px;
-  z-index: 2;
+  padding: 40px;
+  flex: 1;
 }
 
 .zones-choose-row-right .zones-choose-row-info {
+  order: 1;
   left: auto;
-  right: 40px;
+  right: auto;
 }
 
 .zones-choose-row-name {
@@ -363,16 +389,18 @@
 }
 
 .zones-choose-row-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 710px;
+  position: relative;
+  width: 50%;
   height: 627px;
+  flex-shrink: 0;
+  top: auto;
+  left: auto;
 }
 
 .zones-choose-row-right .zones-choose-row-image {
+  order: 2;
   left: auto;
-  right: 0;
+  right: auto;
 }
 
 .zones-choose-row-image img {
