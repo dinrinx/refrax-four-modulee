@@ -1,6 +1,6 @@
 .zones-hero {
   position: relative;
-  width: 1440px;
+  width: 100%;
   min-height: 1024px;
   background: #f6f6f6;
   margin: 0 auto;
@@ -33,10 +33,11 @@
 /* джойстик повёрнутый */
 .zones-hero-image {
   position: absolute;
-  top: 62px;
-  left: 735px;
-  width: 966px;
-  height: 843px;
+  top: 80px;
+  right: -220px;
+  width: 920px;
+  height: 820px;
+  z-index: 2;
 }
 
 .zones-hero-image img {
@@ -51,7 +52,7 @@
   position: absolute;
   top: 758px;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 266px;
   background: #222;
   display: flex;
@@ -59,6 +60,7 @@
   gap: 16px;
   padding: 32px 40px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .zones-hero-strip-item {
@@ -81,35 +83,38 @@
 
 .zones-dark {
   position: relative;
-  width: 1440px;
-  height: 1133px;
+  width: 95%;
   background: #222;
-  margin: 0 auto;
   border-radius: 0 0 64px 64px;
   overflow: hidden;
+  z-index: 1;
+  padding: 55px 46px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .zones-dark-title {
-  position: absolute;
-  top: 55px;
-  left: 56px;
   font-family: "coolvetica", sans-serif;
   font-size: 210px;
   line-height: 0.75;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 80px;
+  text-align: center;
+  margin-top: 36px;
 }
 
 .zones-dark-inner {
-  position: absolute;
-  top: 286px;
-  left: 46px;
-  width: 1361px;
-  height: 790px;
   background: #eee;
   border-radius: 32px;
-  overflow: hidden;
-  padding: 28px 26px;
+  padding: 34px 34px;
+  min-height: 790px;
+  width: 100%;
+  max-width: 1500px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .zones-dark-count {
@@ -118,6 +123,8 @@
   color: #c4c4c4;
   text-transform: uppercase;
   margin-bottom: 8px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .zones-dark-subtitle {
@@ -125,29 +132,29 @@
   font-size: 32px;
   color: #222;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
 }
 
 .zones-dark-cards {
   display: flex;
   gap: 50px;
-  position: absolute;
-  top: 137px;
-  left: 26px;
+  margin-top: 24px;
+  justify-content: center;
 }
 
 .zones-dark-card {
-  width: 410px;
+  flex: 1;
+  max-width: 460px;
   cursor: pointer;
 }
 
 .zones-dark-card img {
-  width: 410px;
-  height: 397px;
+  width: 100%;
+  height: 450px;
   object-fit: cover;
   border-radius: 16px;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .zones-dark-card-name {
@@ -156,7 +163,7 @@
   line-height: 0.75;
   text-transform: uppercase;
   color: #222;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .zones-dark-card-desc {
@@ -164,7 +171,7 @@
   font-size: 18px;
   color: #222;
   text-transform: uppercase;
-  width: 175px;
+  width: 240px;
   line-height: 1.33;
 }
 

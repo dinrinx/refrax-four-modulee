@@ -7,6 +7,7 @@
     <link type="image/x-icon" href="../images/favicon.png" rel="icon" />
     <link rel="stylesheet" href="../stylesheet/style.css" />
     <script src="../js/nav.js" defer></script>
+    <script src="../js/about.js" defer></script>
   </head>
   <body>
     <!-- меню оверлей -->
@@ -51,29 +52,29 @@
       <p class="about-eyebrow">Твоя игровая база мечты</p>
 
       <div class="about-hero-titles">
-        <p class="about-title about-title-base">База</p>
-        <p class="about-title about-title-for">для</p>
+        <p class="about-title about-title-base about-title-animated">База</p>
+        <p class="about-title about-title-for about-title-animated">для</p>
       </div>
 
       <div class="about-hero-titles-second">
-        <p class="about-title about-title-at">@</p>
-        <p class="about-title about-title-you">тебя</p>
+        <p class="about-title about-title-at about-title-animated">@</p>
+        <p class="about-title about-title-you about-title-animated">тебя</p>
       </div>
 
       <p class="about-eyebrow about-eyebrow-second">Твоя игровая база мечты</p>
 
       <!-- фото справа -->
       <div class="about-hero-image">
-        <img src="../images/about-hero.jpg" alt="" />
+        <img src="../images/main-photo-about.png" alt="" />
       </div>
 
       <!-- иконки снизу -->
       <div class="about-icons">
         <div class="about-icon-item">
-          <img src="../images/about-icon-1.png" alt="" />
+          <img src="../images/villian-first.svg" alt="" />
         </div>
         <div class="about-icon-item">
-          <img src="../images/about-icon-2.png" alt="" />
+          <img src="../images/villian-second.svg" alt="" />
         </div>
         <div class="about-icon-item about-icon-item-purple">
           <div class="about-icon-dot"></div>
@@ -83,21 +84,29 @@
 
     <!-- секция 2: мы -->
     <section class="about-we">
-      <p class="about-divider-line"></p>
-
-      <p class="about-since">Since 2010</p>
-
       <div class="about-we-titles">
-        <p class="about-title">Мы</p>
+        <p class="about-title about-title-my">Мы</p>
         <p class="about-title">&</p>
+      </div>
+
+      <div class="about-we-line-group-top">
+        <div class="about-we-line about-we-line-top"></div>
+      </div>
+
+      <div class="about-we-since-group">
+        <p class="about-since">Since 2010</p>
+        <div class="about-we-line about-we-line-mid"></div>
       </div>
 
       <p class="about-title about-title-nobetrayal">не предаем</p>
       <p class="about-title about-title-traditions">традиции</p>
 
+      <div class="about-we-line-group-bot">
+        <div class="about-we-line about-we-line-bot"></div>
+      </div>
+
       <!-- карточка концепции -->
       <div class="about-concept-card">
-        <p class="about-concept-title">Концепция клуба коротко</p>
         <p class="about-concept-text">
           Место где злодеи находят своих.<br />
           Где поражение — это просто следующий уровень.<br />
@@ -105,7 +114,8 @@
           хочется остаться навсегда.
         </p>
         <p class="about-concept-footer">
-          Основан в 2010. Пережил 4 консольных поколения. Не предаём своих.
+          Основан в 2010. <br />
+          Пережил 4 консольных поколения. Не предаём своих.
         </p>
       </div>
     </section>
@@ -117,18 +127,46 @@
 
       <div class="about-rules-cards">
         <div class="about-rules-card">
-          <span class="about-rules-number">01</span>
-          <p class="about-rules-card-title">Правило первое</p>
+          <div class="about-rules-ear">
+            <span class="about-rules-number">01</span>
+          </div>
+          <p class="about-rules-card-title">Не ломай чужое</p>
           <p class="about-rules-card-text">
-            Оставить имущество клуба в покое<br />и не ломать его
+            Оборудование клуба стоит как твой месячный бюджет — береги его как
+            собственное оружие
           </p>
         </div>
 
         <div class="about-rules-card">
-          <span class="about-rules-number">02</span>
-          <p class="about-rules-card-title">Правило второе</p>
+          <div class="about-rules-ear">
+            <span class="about-rules-number">02</span>
+          </div>
+          <p class="about-rules-card-title">Уважай соперника</p>
           <p class="about-rules-card-text">
-            Оставить имущество клуба в покое<br />и не ломать его
+            Даже злодеи знают — настоящая победа <br />
+            не в унижении врага, <br />
+            а в мастерстве
+          </p>
+        </div>
+
+        <div class="about-rules-card">
+          <div class="about-rules-ear">
+            <span class="about-rules-number">03</span>
+          </div>
+          <p class="about-rules-card-title">Не мешай другим злодействовать</p>
+          <p class="about-rules-card-text">
+            У каждого своя миссия. Не врывайся в чужую игру без приглашения
+          </p>
+        </div>
+
+        <div class="about-rules-card">
+          <div class="about-rules-ear">
+            <span class="about-rules-number">04</span>
+          </div>
+          <p class="about-rules-card-title">Возвращай то, что взял</p>
+          <p class="about-rules-card-text">
+            Диски, контроллеры, кресла — всё должно вернуться туда откуда взял.
+            Мы следим
           </p>
         </div>
       </div>
@@ -145,13 +183,14 @@
         <div class="about-plan-info">
           <p class="about-plan-name">Разовый</p>
           <div class="about-plan-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Зайди, почувствуй, уйди <br />
+              победителем. Или хотя бы попробуй
+            </p>
           </div>
         </div>
         <div class="about-plan-image">
-          <img src="../images/about-plan-1.jpg" alt="" />
+          <img src="../images/about-plan-1.png" alt="" />
         </div>
       </div>
 
@@ -159,13 +198,14 @@
         <div class="about-plan-info">
           <p class="about-plan-name">На неделю</p>
           <div class="about-plan-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Семь дней чтобы стать <br />легендой клуба. Или хотя <br />
+              бы выспаться за экраном
+            </p>
           </div>
         </div>
         <div class="about-plan-image">
-          <img src="../images/about-plan-2.jpg" alt="" />
+          <img src="../images/about-plan-2.png" alt="" />
         </div>
       </div>
 
@@ -173,13 +213,15 @@
         <div class="about-plan-info">
           <p class="about-plan-name">Месяц ПК</p>
           <div class="about-plan-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Твой личный штаб <br />
+              на целый месяц. Приходи <br />
+              когда хочешь — мы всегда здесь
+            </p>
           </div>
         </div>
         <div class="about-plan-image">
-          <img src="../images/about-plan-3.jpg" alt="" />
+          <img src="../images/about-plan-3.png" alt="" />
         </div>
       </div>
 
@@ -187,13 +229,15 @@
         <div class="about-plan-info">
           <p class="about-plan-name">Безлимит</p>
           <div class="about-plan-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Настоящие злодеи <br />
+              не считают часы. <br />
+              Они просто живут в REFRAX.
+            </p>
           </div>
         </div>
         <div class="about-plan-image">
-          <img src="../images/about-plan-4.jpg" alt="" />
+          <img src="../images/about-plan-4.png" alt="" />
         </div>
       </div>
     </section>
