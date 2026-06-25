@@ -64,227 +64,974 @@
     padding: 0;
   }
 }
-  /* ===== КАРТА ===== */
-  .map-inner {
+/* ===== КАРТА ===== */
+.map-inner {
+  width: 100%;
+  flex-direction: column;
+  padding-left: 0;
+  height: auto;
+  gap: 0;
+}
+
+.map-floorplan {
+  width: 100%;
+  height: 300px;
+}
+
+.map-booking {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin: 0;
+  border-radius: 0 0 48px 48px;
+}
+
+.map-booking-hall {
+  font-size: 40px;
+}
+
+.map-booking-slots {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: calc(100% - 32px);
+  height: auto;
+  margin: 80px 16px 16px;
+  padding: 16px;
+}
+
+.map-booking-slots-title {
+  position: relative;
+  top: auto;
+  left: auto;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.map-slots-list {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+.map-slot-btn {
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+}
+
+/* ===== СОБЫТИЯ ===== */
+.events-title {
+  font-size: 80px;
+}
+
+.events-heading {
+  font-size: 48px;
+}
+
+.events-cards {
+  height: 600px;
+}
+
+.events-card-one {
+  width: 240px;
+  height: 360px;
+  left: -20px;
+  top: 80px;
+}
+.events-card-two {
+  width: 220px;
+  height: 330px;
+  left: 200px;
+  top: 40px;
+}
+.events-card-three {
+  width: 220px;
+  height: 330px;
+  left: 400px;
+  top: 120px;
+}
+.events-card-four {
+  width: 220px;
+  height: 330px;
+  right: 180px;
+  top: 20px;
+}
+.events-card-five {
+  width: 240px;
+  height: 360px;
+  right: -20px;
+  top: 80px;
+}
+
+/* ===== ЗОНЫ ===== */
+.zones-title {
+  font-size: 80px;
+}
+
+.zones-subtitle {
+  font-size: 24px;
+}
+
+.zones-cards {
+  height: 500px;
+}
+
+/* ===== ТАРИФЫ ===== */
+.plans-title {
+  font-size: 90px;
+}
+
+.plans-subtitle {
+  font-size: 24px;
+}
+
+.plans-cards {
+  gap: 12px;
+}
+
+.plans-card-name {
+  font-size: 36px;
+}
+
+.plans-card-price-value {
+  font-size: 36px;
+}
+
+/* ===== ОТЗЫВЫ ===== */
+.reviews-title {
+  font-size: 90px;
+}
+
+.reviews-subtitle {
+  font-size: 24px;
+}
+
+.reviews-cards {
+  height: 700px;
+}
+
+.reviews-card-one {
+  left: 60px;
+  top: 40px;
+  width: 260px;
+}
+.reviews-card-two {
+  right: 60px;
+  top: 60px;
+  width: 300px;
+}
+.reviews-card-three {
+  left: 40px;
+  top: 260px;
+  width: 260px;
+}
+.reviews-card-four {
+  left: 200px;
+  top: 440px;
+  width: 300px;
+}
+.reviews-card-five {
+  right: 40px;
+  top: 260px;
+  width: 280px;
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+  height: auto !important;
+  padding: 40px 24px 60px;
+  overflow: visible;
+}
+
+.footer-logo {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-bottom: 24px;
+}
+
+.footer-title {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  font-size: 120px;
+  text-align: center;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.footer-address {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-bottom: 24px;
+}
+
+.footer-contacts {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-contact {
+  position: relative;
+  top: auto;
+  left: auto;
+  font-size: 18px;
+  padding: 10px 18px;
+}
+
+/* планшет стр о клубе */
+
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .about-hero {
     width: 100%;
-    flex-direction: column;
-    padding-left: 0;
-    height: auto;
-    gap: 0;
+    min-height: 700px;
+    padding-top: 120px;
+    overflow: hidden;
   }
 
-  .map-floorplan {
+  .about-we {
     width: 100%;
-    height: 300px;
+    min-height: auto;
+    overflow: hidden;
   }
 
-  .map-booking {
+  .about-plans {
     width: 100%;
-    height: auto;
-    min-height: 300px;
-    margin: 0;
-    border-radius: 0 0 48px 48px;
+    padding: 40px 0 0;
   }
 
-  .map-booking-hall {
-    font-size: 40px;
-  }
-
-  .map-booking-slots {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: calc(100% - 32px);
-    height: auto;
-    margin: 80px 16px 16px;
-    padding: 16px;
-  }
-
-  .map-booking-slots-title {
-    position: relative;
-    top: auto;
-    left: auto;
-    font-size: 32px;
-    margin-bottom: 12px;
-  }
-
-  .map-slots-list {
-    position: relative;
-    top: auto;
-    left: auto;
-  }
-
-  .map-slot-btn {
+  .about-plan-row {
     width: 100%;
-    height: 56px;
-    font-size: 18px;
-  }
-
-  /* ===== СОБЫТИЯ ===== */
-  .events-title {
-    font-size: 80px;
-  }
-
-  .events-heading {
-    font-size: 48px;
-  }
-
-  .events-cards {
-    height: 600px;
-  }
-
-  .events-card-one {
-    width: 240px;
     height: 360px;
-    left: -20px;
-    top: 80px;
+    padding: 16px 24px;
   }
-  .events-card-two {
-    width: 220px;
-    height: 330px;
-    left: 200px;
-    top: 40px;
+
+  .about-title {
+    font-size: 90px;
   }
-  .events-card-three {
-    width: 220px;
-    height: 330px;
-    left: 400px;
+
+  .about-title-base {
+    top: 180px;
+    left: 24px;
+  }
+  .about-title-for {
+    top: 180px;
+    left: 280px;
+  }
+  .about-title-at {
+    top: 330px;
+    left: 24px;
+  }
+  .about-title-you {
+    top: 330px;
+    left: 260px;
+  }
+
+  .about-eyebrow {
+    top: 160px;
+    left: 24px;
+    font-size: 14px;
+  }
+
+  .about-eyebrow-second {
+    top: 380px;
+    left: 180px;
+    font-size: 14px;
+  }
+
+  .about-hero-image {
+    left: auto;
+    right: -60px;
     top: 120px;
-  }
-  .events-card-four {
-    width: 220px;
-    height: 330px;
-    right: 180px;
-    top: 20px;
-  }
-  .events-card-five {
-    width: 240px;
-    height: 360px;
-    right: -20px;
-    top: 80px;
+    width: 380px;
+    height: 500px;
+    border-radius: 32px;
   }
 
-  /* ===== ЗОНЫ ===== */
-  .zones-title {
+  .about-icons {
+    top: 520px;
+    left: 24px;
+    gap: 24px;
+  }
+
+  .about-icon-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* ===== МЫ ===== */
+  .about-we {
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .about-we-titles {
+    padding: 20px 24px 0;
+  }
+
+  .about-title-nobetrayal {
+    top: 300px;
+    left: 24px;
     font-size: 80px;
   }
 
-  .zones-subtitle {
+  .about-title-traditions {
+    top: 520px;
+    left: 24px;
+    font-size: 80px;
+  }
+
+  .about-we-line-group-top {
+    top: 100px;
+    left: 180px;
+  }
+
+  .about-we-line-group-top .about-we-line-top {
+    width: 500px;
+  }
+
+  .about-we-line-group-bot {
+    top: 500px;
+    left: 24px;
+  }
+
+  .about-we-line-group-bot .about-we-line-bot {
+    width: 400px;
+  }
+
+  .about-concept-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 48px);
+    height: auto;
+    margin: 40px 24px;
+    transform: rotate(2deg);
+  }
+
+  .about-concept-text {
+    font-size: 20px;
+  }
+
+  .about-concept-footer {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 24px;
     font-size: 24px;
   }
 
-  .zones-cards {
+  /* ===== ПРАВИЛА ===== */
+  .about-rules {
+    padding: 0 0 40px 24px;
+  }
+
+  .about-rules-subtitle {
+    font-size: 22px;
+  }
+
+  .about-rules-card {
+    width: 360px;
+    min-height: 400px;
+    padding: 40px 24px 24px;
+  }
+
+  .about-rules-card-title {
+    font-size: 48px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about-rules-card-text {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  /* ===== ТАРИФЫ ===== */
+  .about-plans {
+    width: 100%;
+    padding: 40px 0 0;
+  }
+
+  .about-plans-subtitle {
+    font-size: 22px;
+    padding: 24px 24px;
+  }
+
+  .about-plan-row {
+    width: 100%;
+    height: 360px;
+    padding: 16px 24px;
+  }
+
+  .about-plan-name {
+    font-size: 48px;
+    top: 16px;
+    left: 24px;
+  }
+
+  .about-plan-features {
+    top: 220px;
+    left: 24px;
+  }
+
+  .about-plan-features p {
+    font-size: 18px;
+    white-space: normal;
+    width: 280px;
+  }
+
+  .about-plan-image {
+    width: 380px;
+    height: 380px;
+    right: -60px;
+    top: 16px;
+  }
+}
+
+/* планшет стр зоны */
+
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .zones-hero {
+    min-height: 700px;
+  }
+
+  .zones-hero-eyebrow {
+    top: 120px;
+    left: 24px;
+    font-size: 14px;
+  }
+
+  .zones-hero-title {
+    top: 180px;
+    left: 24px;
+    font-size: 100px;
+  }
+
+  .zones-hero-image {
+    top: 60px;
+    right: -120px;
+    width: 600px;
+    height: 540px;
+  }
+
+  .zones-hero-strip {
+    top: 520px;
+    height: 200px;
+  }
+
+  .zones-hero-strip-item {
+    width: 140px;
+    height: 160px;
+  }
+
+  .zones-hero-strip-item-short {
+    height: 120px;
+  }
+
+  /* ===== ВСЕ ДЛЯ ТЕБЯ ===== */
+  .zones-dark-title {
+    font-size: 120px;
+    margin-bottom: 40px;
+  }
+
+  .zones-dark-inner {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .zones-dark-cards {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .zones-dark-card {
+    max-width: 100%;
+  }
+
+  .zones-dark-card img {
+    height: 300px;
+  }
+
+  .zones-dark-card-name {
+    font-size: 48px;
+  }
+
+  /* ===== ЛЮБИМЧИКИ ===== */
+  .zones-faves {
+    padding: 40px 24px 120px;
+  }
+
+  .zones-faves-title {
+    font-size: 60px;
+  }
+
+  .zones-faves-line {
+    flex: 1;
+    width: auto;
+  }
+
+  .zones-faves-desc {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .zones-faves-grid {
+    height: 320px;
+  }
+
+  .zones-faves-grid-main,
+  .zones-faves-grid-small {
+    width: 180px;
+    height: 220px;
+  }
+
+  .zones-faves-grid-main:hover,
+  .zones-faves-grid-small:hover {
+    width: 260px;
+    height: 320px;
+  }
+
+  /* ===== ВЫБИРАЙ ЗОНУ ===== */
+  .zones-choose-title {
+    font-size: 72px;
+    padding: 0 24px;
+    margin-bottom: 16px;
+  }
+
+  .zones-choose-subtitle {
+    font-size: 20px;
+    padding: 0 24px;
+    margin-bottom: 40px;
+  }
+
+  .zones-choose-row {
+    flex-direction: column;
+  }
+
+  .zones-choose-row-right {
+    flex-direction: column;
+  }
+
+  .zones-choose-row-image {
+    width: 100%;
+    height: 300px;
+    order: 1 !important;
+  }
+
+  .zones-choose-row-info {
+    order: 2 !important;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .zones-choose-row-name {
+    font-size: 60px;
+  }
+
+  .zones-choose-row-arrow {
+    width: 56px;
+    height: 50px;
+    font-size: 36px;
+  }
+}
+
+/* планшет стр афиша */
+
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .events-page-hero {
+    min-height: 700px;
+    padding-top: 120px;
+  }
+
+  .events-page-title {
+    font-size: 100px;
+  }
+
+  .events-page-eyebrow {
+    top: 440px;
+    font-size: 14px;
+  }
+
+  .events-page-side {
+    top: 540px;
+    width: 200px;
+    height: 180px;
+  }
+
+  /* ===== ТУРНИРЫ ===== */
+  .events-page-type {
+    padding: 40px 24px 0;
+  }
+
+  .events-page-type-title {
+    font-size: 72px;
+  }
+
+  .events-page-cards {
+    height: 560px;
+    gap: 12px;
+  }
+
+  .events-page-card,
+  .events-page-card-main,
+  .events-page-card-small {
+    width: 220px;
+    height: 340px;
+  }
+
+  .events-page-card:hover {
+    width: 280px;
+    height: 460px;
+  }
+
+  /* ===== БЛИЖАЙШИЕ ===== */
+  .events-page-nearest-header {
+    gap: 16px;
+  }
+
+  .events-page-nearest {
+    font-size: 80px;
+  }
+
+  .events-page-nearest-line {
+    width: 300px;
+  }
+
+  /* ===== МАСТЕР-КЛАССЫ ===== */
+  .events-page-scattered {
+    width: 100%;
+    height: 700px;
+  }
+
+  .events-page-type-title-center {
+    font-size: 200px;
+    bottom: 160px;
+  }
+
+  .events-page-scattered-one {
+    left: 20px;
+    top: 160px;
+    width: 220px;
+    height: 340px;
+  }
+
+  .events-page-scattered-two {
+    left: 270px;
+    top: 0;
+    width: 220px;
+    height: 340px;
+  }
+
+  .events-page-scattered-three {
+    left: 520px;
+    top: 160px;
+    width: 220px;
+    height: 340px;
+  }
+
+  /* ===== ДАЖЕ ПАТИ ===== */
+  .events-page-party {
+    padding: 40px 24px;
+  }
+
+  .events-page-party-title {
+    font-size: 100px;
+  }
+
+  .events-page-party-content {
     height: 500px;
+    gap: 16px;
+  }
+
+  .events-page-party-bracket {
+    font-size: 360px;
+    padding: 0 16px;
+  }
+
+  .events-page-party-main,
+  .events-page-party-ellipse {
+    width: 150px;
+    height: 300px;
+  }
+
+  .events-page-party-main:hover,
+  .events-page-party-ellipse:hover {
+    width: 300px;
+    height: 300px;
   }
 
   /* ===== ТАРИФЫ ===== */
   .plans-title {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   .plans-subtitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .plans-cards {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .plans-card {
+    width: 100% !important;
+  }
+}
+
+/* планшет стр события */
+
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .event-single-hero {
+    min-height: 700px;
+    padding-top: 120px;
+  }
+
+  .event-single-title {
+    font-size: 120px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .event-single-date-num {
+    font-size: 160px;
+  }
+
+  .event-single-date-month {
+    font-size: 40px;
+  }
+
+  .event-single-date {
+    padding: 0 24px;
+  }
+
+  /* ===== ЧТО БУДЕТ ===== */
+  .event-single-what {
+    width: 100%;
+    height: auto;
+    padding: 60px 24px;
+  }
+
+  .event-single-section-title {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+
+  .event-single-cards {
+    height: 380px;
     gap: 12px;
   }
 
-  .plans-card-name {
-    font-size: 36px;
+  .event-single-card-small {
+    width: 200px;
+    height: 300px;
   }
 
-  .plans-card-price-value {
-    font-size: 36px;
+  .event-single-card:hover {
+    width: 280px !important;
+    height: 380px !important;
   }
 
-  /* ===== ОТЗЫВЫ ===== */
-  .reviews-title {
+  .event-single-subsection-title {
+    font-size: 56px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  /* ===== ФОТКИ ===== */
+  .event-single-photos {
+    width: 100%;
+    padding: 40px 24px;
+  }
+
+  .event-single-photos-title {
+    font-size: 80px;
+  }
+
+  .event-single-photos-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .event-single-photos-grid {
+    height: 500px;
+  }
+
+  .event-single-photo-one {
+    left: 24px;
+    top: 0;
+    width: 280px;
+    height: 200px;
+  }
+
+  .event-single-photo-two {
+    left: 200px;
+    top: 240px;
+    width: 280px;
+    height: 200px;
+  }
+
+  .event-single-photo-three {
+    left: 420px;
+    top: 0;
+    width: 280px;
+    height: 200px;
+  }
+
+  /* ===== А ТЫ ГОТОВ ===== */
+  .event-single-ready {
+    width: 100%;
+    padding: 60px 0 0;
+  }
+
+  .event-single-ready-title {
+    font-size: 90px;
+    padding: 0 24px;
+    margin-bottom: 24px;
+  }
+
+  .event-single-ready-subtitle {
+    font-size: 20px;
+    padding: 0 24px;
+    margin-bottom: 40px;
+  }
+
+  .event-single-tier {
+    width: 100%;
+    height: 360px;
+    padding: 16px 24px;
+  }
+
+  .event-single-tier-name {
+    font-size: 48px;
+  }
+
+  .event-single-tier-features p {
+    font-size: 18px;
+    width: 260px;
+  }
+
+  .event-single-tier-image {
+    width: 400px;
+    height: 400px;
+    right: -60px;
+    top: 16px;
+  }
+
+  /* ===== ПОПАП ===== */
+  .shop-popup {
+    width: calc(100% - 32px);
+    padding: 32px 24px;
+  }
+
+  .shop-popup-title {
+    font-size: 48px;
+  }
+}
+
+/* планшет стр наши проекты */
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .projects-hero {
+    min-height: auto;
+    padding-top: 140px;
+  }
+
+  .projects-hero-title {
+    font-size: 90px;
+    width: 100%;
+    padding-left: 24px;
+    margin-bottom: 40px;
+  }
+
+  .projects-hero-label {
+    top: 440px;
+    font-size: 14px;
+  }
+
+  .projects-hero-label-left {
+    left: 24px;
+  }
+
+  .projects-hero-label-right {
+    right: 24px;
+  }
+
+  .projects-hero-images {
+    top: 380px;
+    height: 300px;
+  }
+
+  .projects-hero-img-left {
+    width: 200px;
+    height: 280px;
+  }
+
+  .projects-hero-img-right {
+    width: 180px;
+    height: 260px;
+  }
+
+  .projects-soon {
+    margin-top: 260px;
+    padding: 0 24px;
+  }
+
+  .projects-soon-word {
     font-size: 90px;
   }
 
-  .reviews-subtitle {
-    font-size: 24px;
+  .projects-soon-center {
+    font-size: 14px;
   }
 
-  .reviews-cards {
-    height: 700px;
-  }
-
-  .reviews-card-one {
-    left: 60px;
-    top: 40px;
-    width: 260px;
-  }
-  .reviews-card-two {
-    right: 60px;
-    top: 60px;
-    width: 300px;
-  }
-  .reviews-card-three {
-    left: 40px;
-    top: 260px;
-    width: 260px;
-  }
-  .reviews-card-four {
-    left: 200px;
-    top: 440px;
-    width: 300px;
-  }
-  .reviews-card-five {
-    right: 40px;
-    top: 260px;
-    width: 280px;
-  }
-
-  /* ===== ФУТЕР ===== */
-  .footer {
-    height: auto !important;
-    padding: 40px 24px 60px;
-    overflow: visible;
-  }
-
-  .footer-logo {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-bottom: 24px;
-  }
-
-  .footer-title {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    font-size: 120px;
-    text-align: center;
-    width: 100%;
-    margin: 24px 0;
-  }
-
-  .footer-address {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-bottom: 24px;
-  }
-
-  .footer-contacts {
-    position: relative;
-    top: auto;
-    left: auto;
+  /* ===== ПРОЕКТЫ ===== */
+  .projects-item {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 40px;
   }
 
-  .footer-contact {
+  .projects-item-info {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .projects-item-title {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+
+  .projects-item-desc {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .projects-item-image {
     position: relative;
     top: auto;
-    left: auto;
-    font-size: 18px;
-    padding: 10px 18px;
+    right: auto;
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
   }
 }
