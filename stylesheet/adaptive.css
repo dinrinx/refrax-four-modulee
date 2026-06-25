@@ -1,0 +1,290 @@
+/* планшет стр главная */
+
+@media (max-width: 768px) {
+  /* ===== HERO ===== */
+  .hero {
+    height: auto;
+    min-height: 900px;
+  }
+
+  .hero-title-text {
+    font-size: 90px;
+  }
+
+  .hero-title {
+    top: 200px;
+    right: 20px;
+  }
+
+  .hero-logo img {
+    height: 28px;
+  }
+
+  .hero-joystick {
+    width: 650px;
+    top: 300px;
+    left: 100px;
+  }
+
+  .hero-announcement {
+    width: 320px;
+    height: auto;
+    top: 32px;
+    left: 20px;
+    padding-bottom: 16px;
+  }
+
+  .hero-announcement-image {
+    width: calc(100% - 16px);
+    height: 200px;
+    margin: 8px;
+    border-radius: 24px;
+  }
+
+  .hero-announcement-teacher {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 12px 16px 0;
+  }
+
+  .hero-announcement-location {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 8px 16px;
+  }
+
+  .hero-announcement-buttons {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    margin: 8px 16px 0;
+    padding: 0;
+  }
+}
+  /* ===== КАРТА ===== */
+  .map-inner {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+    height: auto;
+    gap: 0;
+  }
+
+  .map-floorplan {
+    width: 100%;
+    height: 300px;
+  }
+
+  .map-booking {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin: 0;
+    border-radius: 0 0 48px 48px;
+  }
+
+  .map-booking-hall {
+    font-size: 40px;
+  }
+
+  .map-booking-slots {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    height: auto;
+    margin: 80px 16px 16px;
+    padding: 16px;
+  }
+
+  .map-booking-slots-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .map-slots-list {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .map-slot-btn {
+    width: 100%;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  /* ===== СОБЫТИЯ ===== */
+  .events-title {
+    font-size: 80px;
+  }
+
+  .events-heading {
+    font-size: 48px;
+  }
+
+  .events-cards {
+    height: 600px;
+  }
+
+  .events-card-one {
+    width: 240px;
+    height: 360px;
+    left: -20px;
+    top: 80px;
+  }
+  .events-card-two {
+    width: 220px;
+    height: 330px;
+    left: 200px;
+    top: 40px;
+  }
+  .events-card-three {
+    width: 220px;
+    height: 330px;
+    left: 400px;
+    top: 120px;
+  }
+  .events-card-four {
+    width: 220px;
+    height: 330px;
+    right: 180px;
+    top: 20px;
+  }
+  .events-card-five {
+    width: 240px;
+    height: 360px;
+    right: -20px;
+    top: 80px;
+  }
+
+  /* ===== ЗОНЫ ===== */
+  .zones-title {
+    font-size: 80px;
+  }
+
+  .zones-subtitle {
+    font-size: 24px;
+  }
+
+  .zones-cards {
+    height: 500px;
+  }
+
+  /* ===== ТАРИФЫ ===== */
+  .plans-title {
+    font-size: 90px;
+  }
+
+  .plans-subtitle {
+    font-size: 24px;
+  }
+
+  .plans-cards {
+    gap: 12px;
+  }
+
+  .plans-card-name {
+    font-size: 36px;
+  }
+
+  .plans-card-price-value {
+    font-size: 36px;
+  }
+
+  /* ===== ОТЗЫВЫ ===== */
+  .reviews-title {
+    font-size: 90px;
+  }
+
+  .reviews-subtitle {
+    font-size: 24px;
+  }
+
+  .reviews-cards {
+    height: 700px;
+  }
+
+  .reviews-card-one {
+    left: 60px;
+    top: 40px;
+    width: 260px;
+  }
+  .reviews-card-two {
+    right: 60px;
+    top: 60px;
+    width: 300px;
+  }
+  .reviews-card-three {
+    left: 40px;
+    top: 260px;
+    width: 260px;
+  }
+  .reviews-card-four {
+    left: 200px;
+    top: 440px;
+    width: 300px;
+  }
+  .reviews-card-five {
+    right: 40px;
+    top: 260px;
+    width: 280px;
+  }
+
+  /* ===== ФУТЕР ===== */
+  .footer {
+    height: auto !important;
+    padding: 40px 24px 60px;
+    overflow: visible;
+  }
+
+  .footer-logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 24px;
+  }
+
+  .footer-title {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    font-size: 120px;
+    text-align: center;
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  .footer-address {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 24px;
+  }
+
+  .footer-contacts {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-contact {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+}

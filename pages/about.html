@@ -20,7 +20,7 @@
         <a href="about.html" class="menu-overlay-link is-active">О клубе</a>
         <a href="zones.html" class="menu-overlay-link">Зоны</a>
         <a href="events.html" class="menu-overlay-link">Афиша</a>
-        <a href="merch.html" class="menu-overlay-link">Магазин</a>
+        <a href="shop.html" class="menu-overlay-link">Магазин</a>
         <a href="projects.html" class="menu-overlay-link">Наши проекты</a>
       </nav>
       <p class="menu-overlay-label">Меню</p>
@@ -268,5 +268,47 @@
         <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
       </div>
     </footer>
+    <div class="shop-popup-overlay" id="aboutPopupOverlay">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="aboutPopupClose">×</button>
+        <p class="shop-popup-label">АБОНЕМЕНТ</p>
+        <h2 class="shop-popup-title" id="aboutPopupTitle">Разовый</h2>
+        <p class="shop-popup-desc">
+          Злодеи не тянут. Оформляй — мы всё подготовим.
+        </p>
+        <div class="shop-popup-divider"></div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Имя</label>
+          <input
+            class="shop-popup-field-input"
+            type="text"
+            placeholder="Воланд"
+          />
+        </div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Почта</label>
+          <input
+            class="shop-popup-field-input"
+            type="email"
+            placeholder="voland@refrax.ru"
+          />
+        </div>
+        <button class="shop-popup-btn" id="aboutPopupBtn">Оформить</button>
+      </div>
+    </div>
+
+    <div class="shop-popup-overlay" id="aboutPopupSuccess">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="aboutPopupSuccessClose">×</button>
+        <p class="shop-popup-label">ГОТОВО</p>
+        <h2 class="shop-popup-title">Абонемент<br />оформлен</h2>
+        <p class="shop-popup-desc">
+          Мы свяжемся с тобой для подтверждения. Злодеи ждут недолго.
+        </p>
+        <button class="shop-popup-btn" id="aboutPopupSuccessBtn">
+          Закрыть
+        </button>
+      </div>
+    </div>
   </body>
 </html>

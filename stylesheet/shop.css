@@ -1,0 +1,350 @@
+.shop-hero {
+  position: relative;
+  width: 100%;
+  min-height: 810px;
+  background: #f6f6f6;
+  overflow: hidden;
+  padding-top: 160px;
+}
+
+.shop-hero-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 160px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  color: #222;
+  padding-left: 45px;
+}
+
+.shop-hero-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 114px;
+  height: 114px;
+  border: 1px solid #222;
+  border-radius: 100px;
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.shop-hero-arrow:hover {
+  background: #222;
+  color: #fff;
+}
+
+.shop-hero-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* тёмная полоса с фотками */
+.shop-hero-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  background: #222;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.shop-hero-strip-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 44px;
+  width: max-content;
+  animation: shopStripScroll 18s linear infinite;
+}
+
+@keyframes shopStripScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.shop-hero-strip-item {
+  width: 184px;
+  height: 205px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.shop-hero-strip-item-short {
+  height: 161px;
+}
+
+.shop-hero-strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-section {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 60px 40px 80px;
+}
+
+.shop-section-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 120px;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 124px;
+  padding: 60px 40px 0;
+}
+
+/* сетка */
+
+.shop-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.shop-row {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 80px;
+}
+
+.shop-row .shop-card:nth-child(1) {
+  margin-right: 139px;
+}
+
+.shop-row .shop-card:nth-child(2) {
+  margin-right: 20px;
+}
+
+/* карточка */
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+}
+
+.shop-card-img {
+  background: #ebd3ff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.shop-card-small {
+  flex: 1;
+}
+
+.shop-card-large {
+  flex: 2;
+}
+
+.shop-card-small .shop-card-img {
+  width: 100%;
+  height: 319px;
+}
+
+.shop-card-large .shop-card-img {
+  max-width: 500px;
+  height: 600px;
+}
+
+.shop-card-choker {
+  height: 480px;
+  width: 408px;
+}
+
+.shop-card-img {
+  background: #ebd3ff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.shop-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-card-info {
+  padding-top: 40px;
+}
+
+.shop-card-name {
+  font-family: "LabGrotesque", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.shop-card-large .shop-card-name {
+  font-size: 40px;
+}
+
+.shop-card-price {
+  font-family: "LabGrotesque", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.shop-card-large .shop-card-price {
+  font-size: 28px;
+}
+
+.shop-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.shop-popup-overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.shop-popup {
+  background: #f6f6f6;
+  border-radius: 24px;
+  padding: 48px;
+  width: 580px;
+  position: relative;
+}
+
+.shop-popup-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 32px;
+  color: #222;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.shop-popup-label {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 14px;
+  color: #a743fb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.shop-popup-title {
+  font-family: "coolvetica", sans-serif;
+  font-size: 64px;
+  line-height: 0.85;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.shop-popup-desc {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.shop-popup-price {
+  font-family: "LabGrotesque", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #a743fb;
+  margin-bottom: 24px;
+}
+
+.shop-popup-divider {
+  height: 1px;
+  background: rgba(34, 34, 34, 0.15);
+  margin-bottom: 24px;
+}
+
+.shop-popup-field {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.15);
+  padding-bottom: 16px;
+}
+
+.shop-popup-field-label {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 16px;
+  color: #222;
+  text-transform: uppercase;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.shop-popup-field-input {
+  font-family: "LabGrotesque", sans-serif;
+  font-size: 16px;
+  color: #222;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.shop-popup-field-input::placeholder {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.shop-popup-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 20px;
+  background: #a743fb;
+  color: #fff;
+  font-family: "coolvetica", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.shop-popup-btn:hover {
+  opacity: 0.85;
+}

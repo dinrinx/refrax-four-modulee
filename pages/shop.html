@@ -1,33 +1,289 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REFRAX</title>
+    <title>Магазин — REFRAX</title>
     <link type="image/x-icon" href="../images/favicon.png" rel="icon" />
-    <link
-      href="../fonts/coolvetica-rg.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../stylesheet/style.css" />
-    <script src="../js/events.js" defer></script>
-    <script src="../js/main.js" defer></script>
+    <link rel="stylesheet" href="../stylesheet/shop.css" />
     <script src="../js/nav.js" defer></script>
-    <script src="../js/zones.js" defer></script>
+    <script src="../js/shop.js" defer></script>
   </head>
   <body>
-    <header class="nav">
-      <a href="../index.html" class="nav__logo">REFRAX</a>
-      <nav class="nav__links">
-        <a href="about.html" class="nav__link">О клубе</a>
-        <a href="zones.html" class="nav__link">Зоны</a>
-        <a href="events.html" class="nav__link">Афиша</a>
-        <a href="merch.html" class="nav__link">Мерч</a>
-        <a href="plans.html" class="nav__link">Абонементы</a>
+    <!-- меню оверлей -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <button class="menu-overlay-close" id="menuClose" type="button">
+        <img src="../images/icon-arrow-left.svg" alt="" />
+      </button>
+      <nav class="menu-overlay-nav">
+        <a href="../index.html" class="menu-overlay-link">Главная</a>
+        <a href="about.html" class="menu-overlay-link">О клубе</a>
+        <a href="zones.html" class="menu-overlay-link">Зоны</a>
+        <a href="events.html" class="menu-overlay-link">Афиша</a>
+        <a href="shop.html" class="menu-overlay-link is-active">Магазин</a>
+        <a href="projects.html" class="menu-overlay-link">Наши проекты</a>
       </nav>
-      <a href="plans.html" class="nav__cta">Купить абонемент</a>
-    </header>
+      <p class="menu-overlay-label">Меню</p>
+    </div>
+
+    <!-- навигация -->
+    <div class="about-nav">
+      <button
+        class="hero-controls-btn hero-controls-btn-menu"
+        id="menuOpen"
+        type="button"
+      >
+        <img src="../images/icon-plus.svg" alt="" />
+        Меню
+      </button>
+      <a href="../404.html" class="hero-controls-btn hero-controls-btn-map">
+        <img src="../images/icon-location.svg" alt="" />
+        Карта
+      </a>
+    </div>
+
+    <!-- лого -->
+    <a href="../index.html" class="about-logo">
+      <img src="../images/logo-refrax.png" alt="REFRAX" />
+    </a>
+
+    <!-- герой -->
+    <section class="shop-hero">
+      <h1 class="shop-hero-title">
+        Придай<br />
+        остринки<br />
+        <span class="shop-hero-title-row"
+          >стилю <a href="#shop-section" class="shop-hero-arrow">→</a></span
+        >
+      </h1>
+
+      <!-- тёмная полоса с фотками -->
+      <div class="shop-hero-strip">
+        <div class="shop-hero-strip-track">
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-bag.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-hoodie.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-bracelets.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-headphones.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-case.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-powerbank.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-tamagochi.png" alt="" />
+          </div>
+          <!-- дубль -->
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-bag.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-hoodie.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-bracelets.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-headphones.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-case.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-powerbank.png" alt="" />
+          </div>
+          <div class="shop-hero-strip-item">
+            <img src="../images/shop-tamagochi.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- секция одежда -->
+    <section class="shop-section">
+      <h2 class="shop-section-title">Одежда</h2>
+
+      <div class="shop-grid">
+        <div class="shop-row">
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-bag.png" alt="" />
+            </div>
+            <p class="shop-card-name">Сумка-колючка</p>
+            <p class="shop-card-price">1 299₽</p>
+          </div>
+          <div class="shop-card shop-card-large">
+            <div class="shop-card-img">
+              <img src="../images/shop-hoodie.png" alt="" />
+            </div>
+            <p class="shop-card-name">Шоппер «Воланд»</p>
+            <p class="shop-card-price">2 499₽</p>
+          </div>
+          <div class="shop-card shop-card-choker">
+            <div class="shop-card-img">
+              <img src="../images/shop-choker.png" alt="" />
+            </div>
+            <p class="shop-card-name">Чокер</p>
+            <p class="shop-card-price">799₽</p>
+          </div>
+        </div>
+
+        <div class="shop-row">
+          <div class="shop-card shop-card-large">
+            <div class="shop-card-img">
+              <img src="../images/shop-bracelets.png" alt="" />
+            </div>
+            <p class="shop-card-name">Браслеты</p>
+            <p class="shop-card-price">599₽</p>
+          </div>
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-headphones.png" alt="" />
+            </div>
+            <p class="shop-card-name">Чехол на наушники</p>
+            <p class="shop-card-price">1 299₽</p>
+          </div>
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-case.png" alt="" />
+            </div>
+            <p class="shop-card-name">Чехол</p>
+            <p class="shop-card-price">699₽</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- секция прочее -->
+    <section class="shop-section">
+      <h2 class="shop-section-title">Прочее</h2>
+
+      <div class="shop-grid">
+        <!-- малая карточка — тамагочи -->
+        <div class="shop-row">
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-tamagochi.png" alt="" />
+            </div>
+            <p class="shop-card-name">Тамагочи</p>
+            <p class="shop-card-price">3 499₽</p>
+          </div>
+          <div class="shop-card shop-card-large">
+            <div class="shop-card-img">
+              <img src="../images/shop-lemonade.png" alt="" />
+            </div>
+            <p class="shop-card-name">Лимонад «шипучка»</p>
+            <p class="shop-card-price">259₽</p>
+          </div>
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-sdcard.png" alt="" />
+            </div>
+            <p class="shop-card-name">Карта памяти</p>
+            <p class="shop-card-price">4 599₽</p>
+          </div>
+        </div>
+
+        <div class="shop-row">
+          <div class="shop-card shop-card-large">
+            <div class="shop-card-img">
+              <img src="../images/shop-powerbank.png" alt="" />
+            </div>
+            <p class="shop-card-name">Повербанк</p>
+            <p class="shop-card-price">1 299₽</p>
+          </div>
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-flashdrive.png" alt="" />
+            </div>
+            <p class="shop-card-name">Флешка</p>
+            <p class="shop-card-price">1 799₽</p>
+          </div>
+          <div class="shop-card shop-card-small">
+            <div class="shop-card-img">
+              <img src="../images/shop-speaker.png" alt="" />
+            </div>
+            <p class="shop-card-name">Колонка</p>
+            <p class="shop-card-price">3 299₽</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer">
+      <a href="../index.html" class="footer-logo">
+        <img src="../images/logo-refrax-white.png" alt="REFRAX" />
+      </a>
+      <div class="footer-address">
+        <p class="footer-address-text">Москва, ул. Воланда, д.36, с. 2</p>
+        <p class="footer-address-text">Москва, пр. Крипипасты, д. 666</p>
+      </div>
+      <p class="footer-title">Зарубимся?</p>
+      <div class="footer-contacts">
+        <a
+          href="mailto:helpme@refrax.ru"
+          class="footer-contact footer-contact-email"
+          >helpme@refrax.ru</a
+        >
+        <a href="tel:+74951260948" class="footer-contact footer-contact-phone"
+          >+7 495 126 09 48</a
+        >
+        <a href="#" class="footer-contact footer-contact-tg">Телеграм-канал</a>
+        <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
+      </div>
+    </footer>
+
+    <!-- попап товара -->
+    <div class="shop-popup-overlay" id="shopPopupOverlay">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="shopPopupClose">×</button>
+        <p class="shop-popup-label">МЕРЧ</p>
+        <h2 class="shop-popup-title" id="shopPopupTitle">Шоппер «Воланд»</h2>
+        <p class="shop-popup-desc">
+          Злодеи тоже ходят за продуктами. Делай это со стилем.
+        </p>
+        <p class="shop-popup-price" id="shopPopupPrice">2 499₽</p>
+        <div class="shop-popup-divider"></div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Имя</label>
+          <input
+            class="shop-popup-field-input"
+            type="text"
+            placeholder="Воланд"
+          />
+        </div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Почта</label>
+          <input
+            class="shop-popup-field-input"
+            type="email"
+            placeholder="voland@refrax.ru"
+          />
+        </div>
+        <button class="shop-popup-btn">Заказать</button>
+      </div>
+    </div>
+
+    <div class="shop-popup-overlay" id="shopPopupSuccess">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="shopPopupSuccessClose">×</button>
+        <p class="shop-popup-label">ГОТОВО</p>
+        <h2 class="shop-popup-title">Злодей<br />оформлен</h2>
+        <p class="shop-popup-desc">
+          Мы свяжемся с тобой для предзаказа. Злодеи ждут недолго.
+        </p>
+        <button class="shop-popup-btn" id="shopPopupSuccessBtn">Закрыть</button>
+      </div>
+    </div>
   </body>
 </html>

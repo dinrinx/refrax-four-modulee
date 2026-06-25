@@ -7,6 +7,7 @@
     <link type="image/x-icon" href="../images/favicon.png" rel="icon" />
     <link rel="stylesheet" href="../stylesheet/style.css" />
     <script src="../js/nav.js" defer></script>
+    <script src="../js/event-single.js" defer></script>
   </head>
   <body class="event-single-body">
     <!-- меню оверлей -->
@@ -19,7 +20,7 @@
         <a href="about.html" class="menu-overlay-link">О клубе</a>
         <a href="zones.html" class="menu-overlay-link">Зоны</a>
         <a href="events.html" class="menu-overlay-link is-active">Афиша</a>
-        <a href="merch.html" class="menu-overlay-link">Магазин</a>
+        <a href="shop.html" class="menu-overlay-link">Магазин</a>
         <a href="projects.html" class="menu-overlay-link">Наши проекты</a>
       </nav>
       <p class="menu-overlay-label">Меню</p>
@@ -55,7 +56,7 @@
         <p class="event-single-date-num">12</p>
         <div class="event-single-date-center">
           <img
-            src="../images/event-1.png"
+            src="../images/villlian-event.svg"
             alt=""
             class="event-single-date-img"
           />
@@ -71,20 +72,20 @@
 
       <!-- сетка карточек -->
       <div class="event-single-cards">
-        <a href="#" class="event-single-card event-single-card-main">
-          <img src="../images/event-1.png" alt="" />
+        <a href="" class="event-single-card event-single-card-small">
+          <img src="../images/zone-pc.png" alt="" />
         </a>
-        <a href="#" class="event-single-card event-single-card-small">
-          <img src="../images/event-2.png" alt="" />
+        <a href="" class="event-single-card event-single-card-small">
+          <img src="../images/zone-arcade.png" alt="" />
         </a>
-        <a href="#" class="event-single-card event-single-card-small">
-          <img src="../images/event-3.png" alt="" />
+        <a href="" class="event-single-card event-single-card-small">
+          <img src="../images/zones-grid-one.png" alt="" />
         </a>
-        <a href="#" class="event-single-card event-single-card-small">
-          <img src="../images/event-4.png" alt="" />
+        <a href="" class="event-single-card event-single-card-small">
+          <img src="../images/zones-grid-fort.png" alt="" />
         </a>
-        <a href="#" class="event-single-card event-single-card-small">
-          <img src="../images/event-5.png" alt="" />
+        <a href="" class="event-single-card event-single-card-small">
+          <img src="../images/zone-ar.png" alt="" />
         </a>
       </div>
 
@@ -93,18 +94,21 @@
 
     <!-- секция 3: фотки -->
     <section class="event-single-photos">
-      <p class="event-single-photos-title">Фотки</p>
+      <div class="event-single-photos-header">
+        <div class="event-single-photos-line"></div>
+        <p class="event-single-photos-title">Фотки</p>
+      </div>
       <p class="event-single-photos-subtitle">С прошлого игрового квеста</p>
 
       <div class="event-single-photos-grid">
         <div class="event-single-photo event-single-photo-one">
-          <img src="../images/event-2.png" alt="" />
+          <img src="../images/zone-board.png" alt="" />
         </div>
         <div class="event-single-photo event-single-photo-two">
-          <img src="../images/event-3.png" alt="" />
+          <img src="../images/zone-vr.png" alt="" />
         </div>
         <div class="event-single-photo event-single-photo-three">
-          <img src="../images/event-4.png" alt="" />
+          <img src="../images/event-nine.png" alt="" />
         </div>
       </div>
     </section>
@@ -120,13 +124,14 @@
         <div class="event-single-tier-info">
           <p class="event-single-tier-name">Стандарт</p>
           <div class="event-single-tier-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Всё что нужно чтобы начать пакостить. Вход, место и заряженный
+              контроллер.
+            </p>
           </div>
         </div>
         <div class="event-single-tier-image">
-          <img src="../images/about-plan-1.jpg" alt="" />
+          <img src="../images/about-plan-1.png" alt="" />
         </div>
       </div>
 
@@ -134,13 +139,15 @@
         <div class="event-single-tier-info">
           <p class="event-single-tier-name">ВИП</p>
           <div class="event-single-tier-features">
-            <p>Услуга 1</p>
-            <p>Услуга 2</p>
-            <p>Услуга 3</p>
+            <p>
+              Для тех кто пришёл побеждать. Приоритетный вход, отдельная зона
+              <br />
+              и никаких очередей.
+            </p>
           </div>
         </div>
         <div class="event-single-tier-image">
-          <img src="../images/about-plan-2.jpg" alt="" />
+          <img src="../images/about-plan-2.png" alt="" />
         </div>
       </div>
     </section>
@@ -175,5 +182,46 @@
         <a href="#" class="footer-contact footer-contact-vk">Вконтакте</a>
       </div>
     </footer>
+
+    <div class="shop-popup-overlay" id="eventPopupOverlay">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="eventPopupClose">×</button>
+        <p class="shop-popup-label">БРОНЬ</p>
+        <h2 class="shop-popup-title" id="eventPopupTitle">Стандарт</h2>
+        <p class="shop-popup-desc">Бронируй место — злодеи не опаздывают.</p>
+        <div class="shop-popup-divider"></div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Имя</label>
+          <input
+            class="shop-popup-field-input"
+            type="text"
+            placeholder="Воланд"
+          />
+        </div>
+        <div class="shop-popup-field">
+          <label class="shop-popup-field-label">Почта</label>
+          <input
+            class="shop-popup-field-input"
+            type="email"
+            placeholder="voland@refrax.ru"
+          />
+        </div>
+        <button class="shop-popup-btn" id="eventPopupBtn">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="shop-popup-overlay" id="eventPopupSuccess">
+      <div class="shop-popup">
+        <button class="shop-popup-close" id="eventPopupSuccessClose">×</button>
+        <p class="shop-popup-label">ГОТОВО</p>
+        <h2 class="shop-popup-title">Место<br />забронировано</h2>
+        <p class="shop-popup-desc">
+          Мы свяжемся с тобой для подтверждения. Злодеи ждут недолго.
+        </p>
+        <button class="shop-popup-btn" id="eventPopupSuccessBtn">
+          Закрыть
+        </button>
+      </div>
+    </div>
   </body>
 </html>
